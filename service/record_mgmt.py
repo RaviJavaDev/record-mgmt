@@ -72,8 +72,7 @@ class RecordMgmt:
         """
         try:
             self.logger.log('Inserting record started...', self.general_collection_name)
-            columns = ",".join([key for key in dct_obj.keys()])
-            record = tuple([key for key in dct_obj.values()])
+            columns, record = self.__map_cols_records(dct_obj)
             if self.db_type == 'MYSQL':
                 self.my_sql_db_opr.save_record(table_name=table_name, columns=columns, record=record)
             elif self.db_type == 'CASSANDRA':
@@ -97,14 +96,12 @@ class RecordMgmt:
             self.logger.log('Inserting record started...', self.general_collection_name)
             if self.db_type == 'MYSQL':
                 for dct_obj in dict_list:
-                    columns = ",".join([key for key in dct_obj.keys()])
-                    record = tuple([key for key in dct_obj.values()])
+                    columns, record = self.__map_cols_records(dct_obj)
                     self.my_sql_db_opr.save_record(table_name=table_name, columns=columns,
                                                    record=record)
             elif self.db_type == 'CASSANDRA':
                 for dct_obj in dict_list:
-                    columns = ",".join([key for key in dct_obj.keys()])
-                    record = tuple([key for key in dct_obj.values()])
+                    columns, record = self.__map_cols_records(dct_obj)
                     self.cassandra_opr.save_record(table_name=table_name, columns=columns, record=record)
             elif self.db_type == 'MONGODB':
                 self.mongo_opr.save_multiple_records(records=dict_list, collection_name=table_name)
@@ -113,77 +110,67 @@ class RecordMgmt:
             self.logger.log(f'error occurred while creating table {e}', self.error_collection_name)
             raise e
 
-    def update_record(self, table_name, update_condition, new_value):
+    def update_record(self, table_name, filter_criteria, new_value):
         """
         This method updates records.
 
         :param table_name:Table name.
-        :param update_condition:condition to update record.
+        :param filter_criteria:filter_criteria to update record.
         :param new_value:new value to update.
         :return:
         """
         try:
             self.logger.log('update_record() started...', self.general_collection_name)
             if self.db_type == 'MYSQL':
-                records = []
-                for key in new_value.keys():
-                    records.append((key + '=' + '%s'))
-                update_column = ",".join(records)
+                update_column = self.__generate_update_columns(new_value)
 
                 update_record = tuple([key for key in new_value.values()])
 
-                update_condition = [key + '=' + str(value) for key, value in update_condition.items()]
-                update_condition = ','.join(update_condition)
+                filter_criteria = self.__generate_filter_criteria(filter_criteria)
 
                 self.my_sql_db_opr.update_record(table_name=table_name, update_column=update_column,
                                                  update_record=update_record,
-                                                 update_condition=update_condition)
+                                                 update_condition=filter_criteria)
             elif self.db_type == 'CASSANDRA':
-                records = []
-                for key in new_value.keys():
-                    records.append((key + '=' + '%s'))
-                update_column = ",".join(records)
+                update_column = self.__generate_update_columns(new_value)
 
                 update_record = tuple([key for key in new_value.values()])
 
-                update_condition = [key + '=' + str(value) for key, value in update_condition.items()]
-                update_condition = ','.join(update_condition)
+                filter_criteria = self.__generate_filter_criteria(filter_criteria)
 
                 self.cassandra_opr.update_record(table_name=table_name, update_column=update_column,
                                                  update_record=update_record,
-                                                 update_condition=update_condition)
+                                                 update_condition=filter_criteria)
             elif self.db_type == 'MONGODB':
                 self.mongo_opr.update_record(collection_name=table_name, update_record=new_value,
-                                             update_condition=update_condition)
+                                             update_condition=filter_criteria)
 
             self.logger.log('update_record() completed...', self.general_collection_name)
         except Exception as e:
             self.logger.log(f'error occurred while updating record {e}', self.error_collection_name)
             raise e
 
-    def delete_record(self, table_name, delete_condition):
+    def delete_record(self, table_name, filter_criteria):
         """
         This method deletes record.
 
         :param table_name: Table name.
-        :param delete_condition: Condition to delete record.
+        :param filter_criteria: filter_criteria to delete record.
         :return:
         """
         try:
             self.logger.log('delete_record_() started...', self.general_collection_name)
             if self.db_type == 'MYSQL':
-                delete_condition = [key + '=' + str(value) for key, value in delete_condition.items()]
-                delete_condition = ','.join(delete_condition)
+                filter_criteria = self.__generate_filter_criteria(filter_criteria)
 
                 self.my_sql_db_opr.delete_record(table_name=table_name,
-                                                 delete_condition=delete_condition)
+                                                 delete_condition=filter_criteria)
             elif self.db_type == 'CASSANDRA':
-                delete_condition = [key + '=' + str(value) for key, value in delete_condition.items()]
-                delete_condition = ','.join(delete_condition)
+                filter_criteria = self.__generate_filter_criteria(filter_criteria)
                 self.cassandra_opr.delete_record(table_name=table_name,
-                                                 delete_condition=delete_condition)
+                                                 delete_condition=filter_criteria)
             elif self.db_type == 'MONGODB':
-                self.mongo_opr.delete_record(collection_name=table_name, delete_condition=delete_condition)
+                self.mongo_opr.delete_record(collection_name=table_name, delete_condition=filter_criteria)
 
             self.logger.log('delete_record_by_id() completed...', self.general_collection_name)
         except Exception as e:
@@ -200,13 +187,13 @@ class RecordMgmt:
         """
         try:
             self.logger.log('getting record started...', self.general_collection_name)
+            records = []
             if self.db_type == 'MYSQL':
                 records = self.my_sql_db_opr.get_records(table_name=table_name, num_records=num_records)
             elif self.db_type == 'CASSANDRA':
                 records = self.cassandra_opr.get_records(table_name=table_name, num_records=num_records)
             elif self.db_type == 'MONGODB':
                 mongo_records = self.mongo_opr.get_records(collection_name=table_name, num_records=num_records)
-                records = []
                 for rec in mongo_records:
                     records.append(([rec for rec in rec.values()])[1:])
             response = []
@@ -217,3 +204,20 @@ class RecordMgmt:
             self.logger.log(f'error occurred while getting record {e}', self.error_collection_name)
             raise e
         return response
+
+    def __map_cols_records(self, dct_obj):
+        columns = ",".join([key for key in dct_obj.keys()])
+        record = tuple([key for key in dct_obj.values()])
+        return columns, record
+
+    def __generate_update_columns(self, new_value):
+        records = []
+        for key in new_value.keys():
+            records.append((key + '=' + '%s'))
+        update_column = ",".join(records)
+        return update_column
+
+    def __generate_filter_criteria(self, filter_criteria):
+        filter_criteria = [key + '=' + str(value) for key, value in filter_criteria.items()]
+        filter_criteria = ','.join(filter_criteria)
+        return filter_criteria
