@@ -149,6 +149,7 @@ $(document).ready(function(){
         $("#db_name_div").show();
         $("#record_nums_div").hide();
         $("#file_path_div").hide();
+        $("#columns_div").hide();
     }else if(operation == 'delete'){
          $("#filter_div").show();
          $("#data_div").hide();
@@ -157,12 +158,14 @@ $(document).ready(function(){
          $("#db_name_div").show();
          $("#record_nums_div").hide();
          $("#file_path_div").hide();
+         $("#columns_div").hide();
     }else if(operation == 'bulk_upload'){
         $("#data_div").hide();
         $("#table_name_div").show();
         $("#new_data_div").hide();
         $("#filter_div").hide();
         $("#file_path_div").show();
+        $("#columns_div").hide();
         $("#db_name_div").show();
         $("#record_nums_div").hide();
     }else if(operation == 'bulk_download'){
@@ -172,6 +175,7 @@ $(document).ready(function(){
         $("#filter_div").hide();
         $("#file_path_div").hide();
         $("#db_name_div").show();
+        $("#columns_div").hide();
         $("#record_nums_div").show();
     }
 
