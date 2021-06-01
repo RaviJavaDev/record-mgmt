@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Response</title>
+    <title>Record Management</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -106,9 +106,8 @@
 <body>
 <form action="/" name="result-form" method="POST">
     <div class="table-users">
-        <div class="header">Calculation Result</div>
-
-        {{result}}
+        <div class="header">Response</div>
+        <div class="center"><h3>{{result}}</h3></div>
     </div>
     <div>
         <button type="submit" value="Go Back">Go Back</button>

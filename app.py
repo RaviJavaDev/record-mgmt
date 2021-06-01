@@ -64,8 +64,7 @@ def create_db_form():
             db_details = DbDetails(db_type=db_type, db_name=db_name, host=host, user_name=user_name, password=password)
             record_mgmt = RecordMgmt(transaction_id, db_details)
             record_mgmt.create_database(db_name)
-            return render_template('results.html', result={'Status': 'SUCCESS',
-                                                           'message': f'Database {db_name} created successfully in {db_type}.'})
+            return render_template('results.html', result=f'Database {db_name} created successfully in {db_type}.')
     except Exception as e:
         return jsonify({'Status': 'FAILURE', 'message': f'FAILURE: {e}'})
 
@@ -113,8 +112,7 @@ def create_table_form():
             db_details = DbDetails(db_type=db_type, db_name=db_name, host=host, user_name=user_name, password=password)
             record_mgmt = RecordMgmt(transaction_id, db_details)
             record_mgmt.create_table(table_name=table_name, columns=columns)
-            return render_template('results.html', result={'Status': 'SUCCESS',
-                                                           'message': f'Table {table_name} created successfully in {db_name}.'})
+            return render_template('results.html', result=f'Table {table_name} created successfully in {db_name}.')
     except Exception as e:
         return jsonify({'Status': 'FAILURE', 'message': f'FAILURE: {e}'})
 
@@ -158,12 +156,11 @@ def save_record_form():
             password = request.form['password']
             db_name = request.form['db_name']
             table_name = request.form['table_name']
-            dct_obj = request.form['dct_obj']
+            dct_obj = json.loads(request.form['dct_obj'])
             db_details = DbDetails(db_type=db_type, db_name=db_name, host=host, user_name=user_name, password=password)
             record_mgmt = RecordMgmt(transaction_id, db_details)
             record_mgmt.save_record(table_name, dct_obj)
-            return render_template('results.html', result={'Status': 'SUCCESS',
-                                                           'message': f'Record saved successfully in {db_name}.{table_name}.'})
+            return render_template('results.html', result=f'Record saved successfully in {db_name}.{table_name}.')
     except Exception as e:
         return jsonify({'Status': 'FAILURE', 'message': f'FAILURE: {e}'})
 
@@ -217,8 +214,7 @@ def upload_records_form():
             records = json_file_operation.read_json_file()
             record_mgmt = RecordMgmt(transaction_id=transaction_id, db_details=db_details)
             record_mgmt.save_multiple_record(table_name=table_name, dict_list=records)
-            return render_template('results.html', result={'Status': 'SUCCESS',
-                                                           'message': 'Records saved successfully.'})
+            return render_template('results.html', result='Records saved successfully.')
     except Exception as e:
         return jsonify({'Status': 'FAILURE', 'message': f'FAILURE: {e}'})
 
@@ -264,14 +260,13 @@ def update_record_form():
             password = request.form['password']
             db_name = request.form['db_name']
             table_name = request.form['table_name']
-            filter_criteria = request.form['filter_criteria']
-            new_value = request.form['new_value']
+            filter_criteria = json.loads(request.form['filter_criteria'])
+            new_value = json.loads(request.form['new_value'])
             db_details = DbDetails(db_type=db_type, db_name=db_name, host=host, user_name=user_name, password=password)
             record_mgmt = RecordMgmt(transaction_id, db_details)
             record_mgmt.update_record(table_name=table_name, filter_criteria=filter_criteria,
                                       new_value=new_value)
-            return render_template('results.html', result={'Status': 'SUCCESS',
-                                                           'message': 'Record updated successfully.'})
+            return render_template('results.html', result='Record updated successfully.')
     except Exception as e:
         return jsonify({'Status': 'FAILURE', 'message': f'FAILURE: {e}'})
 
@@ -315,12 +310,11 @@ def delete_record_form():
             password = request.form['password']
             db_name = request.form['db_name']
             table_name = request.form['table_name']
-            filter_criteria = request.form['delete_condition']
+            filter_criteria = json.loads(request.form['filter_criteria'])
             db_details = DbDetails(db_type=db_type, db_name=db_name, host=host, user_name=user_name, password=password)
             record_mgmt = RecordMgmt(transaction_id, db_details)
             record_mgmt.delete_record(table_name=table_name, filter_criteria=filter_criteria)
-            return render_template('results.html', result={'Status': 'SUCCESS',
-                                                           'message': 'Record deleted successfully.'})
+            return render_template('results.html', result='Record deleted successfully.')
     except Exception as e:
         return jsonify({'Status': 'FAILURE', 'message': f'FAILURE: {e}'})
 
@@ -375,9 +369,7 @@ def download_records_form():
             records = record_mgmt.get_records(table_name=table_name, num_records=num_records)
             csv_operation.write_data(records)
             return render_template('results.html',
-                                   result={'Status': 'SUCCESS', 'message': 'file successfully downloaded to location ' +
-                                                                           f"/output_data/{table_name}_{num_records}.csv",
-                                           'no. of records: ': f'{len(records)}'})
+                                   result=f'file successfully downloaded to location /output_data/{table_name}_{num_records}.csv')
     except Exception as e:
         return jsonify({'Status': 'FAILURE', 'message': f'FAILURE: {e}'})
 

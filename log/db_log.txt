@@ -2416,3 +2416,1343 @@ cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.
 2021-06-01 16:23:21,466 INFO 127.0.0.1 - - [01/Jun/2021 16:23:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2021-06-01 16:23:24,143 INFO 127.0.0.1 - - [01/Jun/2021 16:23:24] "POST / HTTP/1.1" 200 -
 2021-06-01 16:23:24,204 INFO 127.0.0.1 - - [01/Jun/2021 16:23:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 19:17:38,398 DEBUG connecting to MongoDB Started
+2021-06-01 19:17:39,414 DEBUG connecting to MongoDB Finished
+2021-06-01 19:17:39,416 DEBUG connecting to MongoDB Started
+2021-06-01 19:17:39,543 DEBUG connecting to MongoDB Finished
+2021-06-01 19:17:39,868 DEBUG new_auth_plugin: caching_sha2_password
+2021-06-01 19:17:39,937 INFO in save_single_record()
+2021-06-01 19:17:39,938 INFO in get_db()
+2021-06-01 19:17:40,391 INFO out save_single_record()
+2021-06-01 19:17:40,633 INFO in save_single_record()
+2021-06-01 19:17:40,634 INFO in get_db()
+2021-06-01 19:17:40,987 INFO out save_single_record()
+2021-06-01 19:17:40,988 INFO in save_single_record()
+2021-06-01 19:17:40,988 INFO in get_db()
+2021-06-01 19:17:41,052 INFO out save_single_record()
+2021-06-01 19:17:41,077 INFO 127.0.0.1 - - [01/Jun/2021 19:17:41] "POST /form/create-db HTTP/1.1" 200 -
+2021-06-01 19:17:41,202 INFO 127.0.0.1 - - [01/Jun/2021 19:17:41] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 19:17:41,218 INFO 127.0.0.1 - - [01/Jun/2021 19:17:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 19:18:02,445 INFO 127.0.0.1 - - [01/Jun/2021 19:18:02] "POST / HTTP/1.1" 200 -
+2021-06-01 19:18:02,511 INFO 127.0.0.1 - - [01/Jun/2021 19:18:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 19:29:12,008 DEBUG connecting to MongoDB Started
+2021-06-01 19:29:12,793 DEBUG connecting to MongoDB Finished
+2021-06-01 19:29:12,797 DEBUG connecting to MongoDB Started
+2021-06-01 19:29:12,961 DEBUG connecting to MongoDB Finished
+2021-06-01 19:29:13,110 DEBUG new_auth_plugin: caching_sha2_password
+2021-06-01 19:29:13,228 INFO in save_single_record()
+2021-06-01 19:29:13,228 INFO in get_db()
+2021-06-01 19:29:13,389 INFO out save_single_record()
+2021-06-01 19:29:13,552 INFO in save_single_record()
+2021-06-01 19:29:13,552 INFO in get_db()
+2021-06-01 19:29:13,915 INFO out save_single_record()
+2021-06-01 19:29:13,916 INFO in save_single_record()
+2021-06-01 19:29:13,916 INFO in get_db()
+2021-06-01 19:29:13,934 INFO out save_single_record()
+2021-06-01 19:29:13,951 INFO 127.0.0.1 - - [01/Jun/2021 19:29:13] "POST /form/create-db HTTP/1.1" 200 -
+2021-06-01 19:29:14,020 INFO 127.0.0.1 - - [01/Jun/2021 19:29:14] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 19:29:14,039 INFO 127.0.0.1 - - [01/Jun/2021 19:29:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 19:30:53,672 DEBUG connecting to MongoDB Started
+2021-06-01 19:30:54,568 DEBUG connecting to MongoDB Finished
+2021-06-01 19:30:54,570 DEBUG connecting to MongoDB Started
+2021-06-01 19:30:54,728 DEBUG connecting to MongoDB Finished
+2021-06-01 19:30:54,858 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 19:30:54,859 DEBUG Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2021-06-01 19:30:54,874 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 19:30:54,889 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 19:30:54,904 DEBUG Starting asyncore event loop
+2021-06-01 19:30:54,914 DEBUG Sending initial options message for new connection (1709479608952) to 127.0.0.1:9042
+2021-06-01 19:30:55,712 DEBUG Defuncting connection (1709479608952) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 19:30:55,713 DEBUG Closing connection (1709479608952) to 127.0.0.1:9042
+2021-06-01 19:30:55,714 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 19:30:55,729 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 19:30:56,476 DEBUG Sending initial options message for new connection (1709479791360) to 127.0.0.1:9042
+2021-06-01 19:30:56,496 DEBUG Defuncting connection (1709479791360) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 19:30:56,497 DEBUG Closing connection (1709479791360) to 127.0.0.1:9042
+2021-06-01 19:30:56,497 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 19:30:56,498 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 19:30:57,996 DEBUG Sending initial options message for new connection (1709479608952) to 127.0.0.1:9042
+2021-06-01 19:30:58,111 ERROR Closing connection <AsyncoreConnection(1709479608952) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 19:30:58,112 DEBUG Defuncting connection (1709479608952) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 19:30:58,113 DEBUG Closing connection (1709479608952) to 127.0.0.1:9042
+2021-06-01 19:30:58,114 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 19:30:58,115 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 19:30:59,523 DEBUG Sending initial options message for new connection (1709479609064) to 127.0.0.1:9042
+2021-06-01 19:30:59,790 DEBUG Received options response on new connection (1709479609064) from 127.0.0.1:9042
+2021-06-01 19:30:59,791 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 19:30:59,792 DEBUG Sending StartupMessage on <AsyncoreConnection(1709479609064) 127.0.0.1:9042>
+2021-06-01 19:30:59,797 DEBUG Sent StartupMessage on <AsyncoreConnection(1709479609064) 127.0.0.1:9042>
+2021-06-01 19:30:59,848 DEBUG Got ReadyMessage on new connection (1709479609064) from 127.0.0.1:9042
+2021-06-01 19:30:59,854 DEBUG [control connection] Established new connection <AsyncoreConnection(1709479609064) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 19:31:00,872 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 19:31:00,874 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 19:31:00,875 DEBUG [control connection] Finished fetching ring info
+2021-06-01 19:31:00,876 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 19:31:01,363 DEBUG Control connection created
+2021-06-01 19:31:01,377 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 19:31:02,585 DEBUG Sending initial options message for new connection (1709479792536) to 127.0.0.1:9042
+2021-06-01 19:31:02,604 DEBUG Received options response on new connection (1709479792536) from 127.0.0.1:9042
+2021-06-01 19:31:02,606 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 19:31:02,606 DEBUG Sending StartupMessage on <AsyncoreConnection(1709479792536) 127.0.0.1:9042>
+2021-06-01 19:31:02,608 DEBUG Sent StartupMessage on <AsyncoreConnection(1709479792536) 127.0.0.1:9042>
+2021-06-01 19:31:02,613 DEBUG Got ReadyMessage on new connection (1709479792536) from 127.0.0.1:9042
+2021-06-01 19:31:02,614 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 19:31:02,619 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 19:31:02,630 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 19:31:02,634 DEBUG Started Session with client_id 67a1a76e-9ae3-4a7e-96fc-3cca4768a594 and session_id 1937ee8d-bbc8-4fa0-aa52-3458e5a100bc
+2021-06-01 19:31:02,641 INFO in save_single_record()
+2021-06-01 19:31:02,643 INFO in get_db()
+2021-06-01 19:31:03,235 INFO out save_single_record()
+2021-06-01 19:31:04,490 DEBUG Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'KEYSPACE', 'change_type': 'CREATED', 'keyspace': 'emp_db'}, stream_id=-1, trace_id=None)>
+2021-06-01 19:31:04,936 DEBUG Refreshing schema in response to schema change. {'target_type': 'KEYSPACE', 'change_type': 'CREATED', 'keyspace': 'emp_db'}
+2021-06-01 19:31:04,938 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 19:31:05,046 DEBUG [control connection] Schemas match
+2021-06-01 19:31:05,073 INFO in save_single_record()
+2021-06-01 19:31:05,074 INFO in get_db()
+2021-06-01 19:31:05,210 INFO out save_single_record()
+2021-06-01 19:31:05,210 INFO in save_single_record()
+2021-06-01 19:31:05,211 INFO in get_db()
+2021-06-01 19:31:05,292 INFO out save_single_record()
+2021-06-01 19:31:05,317 INFO 127.0.0.1 - - [01/Jun/2021 19:31:05] "POST /form/create-db HTTP/1.1" 200 -
+2021-06-01 19:31:05,466 INFO 127.0.0.1 - - [01/Jun/2021 19:31:05] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 19:31:05,481 INFO 127.0.0.1 - - [01/Jun/2021 19:31:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 19:31:05,587 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 19:31:05,805 DEBUG [control connection] Schemas match
+2021-06-01 19:32:51,037 DEBUG connecting to MongoDB Started
+2021-06-01 19:32:51,885 DEBUG connecting to MongoDB Finished
+2021-06-01 19:32:51,887 DEBUG connecting to MongoDB Started
+2021-06-01 19:32:52,037 DEBUG connecting to MongoDB Finished
+2021-06-01 19:32:52,105 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 19:32:52,105 DEBUG Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2021-06-01 19:32:52,112 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 19:32:52,115 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 19:32:52,129 DEBUG Starting asyncore event loop
+2021-06-01 19:32:52,147 DEBUG Sending initial options message for new connection (3032366314496) to 127.0.0.1:9042
+2021-06-01 19:32:52,180 DEBUG Defuncting connection (3032366314496) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 19:32:52,180 DEBUG Closing connection (3032366314496) to 127.0.0.1:9042
+2021-06-01 19:32:52,183 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 19:32:52,195 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 19:32:53,673 DEBUG Sending initial options message for new connection (3032366535960) to 127.0.0.1:9042
+2021-06-01 19:32:53,720 DEBUG Defuncting connection (3032366535960) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 19:32:53,721 DEBUG Closing connection (3032366535960) to 127.0.0.1:9042
+2021-06-01 19:32:53,722 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 19:32:53,726 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 19:32:55,195 DEBUG Sending initial options message for new connection (3032366314496) to 127.0.0.1:9042
+2021-06-01 19:32:55,221 ERROR Closing connection <AsyncoreConnection(3032366314496) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 19:32:55,222 DEBUG Defuncting connection (3032366314496) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 19:32:55,224 DEBUG Closing connection (3032366314496) to 127.0.0.1:9042
+2021-06-01 19:32:55,226 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 19:32:55,228 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 19:32:56,737 DEBUG Sending initial options message for new connection (3032366375656) to 127.0.0.1:9042
+2021-06-01 19:32:56,753 DEBUG Received options response on new connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:32:56,754 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 19:32:56,754 DEBUG Sending StartupMessage on <AsyncoreConnection(3032366375656) 127.0.0.1:9042>
+2021-06-01 19:32:56,765 DEBUG Sent StartupMessage on <AsyncoreConnection(3032366375656) 127.0.0.1:9042>
+2021-06-01 19:32:56,797 DEBUG Got ReadyMessage on new connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:32:56,798 DEBUG [control connection] Established new connection <AsyncoreConnection(3032366375656) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 19:32:56,848 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 19:32:56,850 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 19:32:56,852 DEBUG [control connection] Finished fetching ring info
+2021-06-01 19:32:56,854 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 19:32:57,014 DEBUG Control connection created
+2021-06-01 19:32:57,020 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 19:32:58,138 DEBUG Sending initial options message for new connection (3032366375432) to 127.0.0.1:9042
+2021-06-01 19:32:58,155 DEBUG Received options response on new connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:32:58,156 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 19:32:58,156 DEBUG Sending StartupMessage on <AsyncoreConnection(3032366375432) 127.0.0.1:9042>
+2021-06-01 19:32:58,158 DEBUG Sent StartupMessage on <AsyncoreConnection(3032366375432) 127.0.0.1:9042>
+2021-06-01 19:32:58,161 DEBUG Got ReadyMessage on new connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:32:58,162 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 19:32:58,163 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 19:32:58,164 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 19:32:58,165 DEBUG Started Session with client_id ce192945-6318-44da-b093-3fee7dba62f0 and session_id c23377eb-0f20-4e70-9463-68135caf31b3
+2021-06-01 19:32:58,165 INFO in save_single_record()
+2021-06-01 19:32:58,166 INFO in get_db()
+2021-06-01 19:32:58,759 INFO out save_single_record()
+2021-06-01 19:32:59,319 INFO in save_single_record()
+2021-06-01 19:32:59,320 INFO in get_db()
+2021-06-01 19:32:59,696 INFO out save_single_record()
+2021-06-01 19:32:59,697 INFO in save_single_record()
+2021-06-01 19:32:59,698 INFO in get_db()
+2021-06-01 19:32:59,787 INFO out save_single_record()
+2021-06-01 19:32:59,813 INFO 127.0.0.1 - - [01/Jun/2021 19:32:59] "POST /form/create-table HTTP/1.1" 200 -
+2021-06-01 19:33:57,032 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:33:57,034 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:33:57,049 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:33:57,051 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:34:07,757 INFO 127.0.0.1 - - [01/Jun/2021 19:34:07] "GET / HTTP/1.1" 200 -
+2021-06-01 19:34:07,854 INFO 127.0.0.1 - - [01/Jun/2021 19:34:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 19:34:07,884 INFO 127.0.0.1 - - [01/Jun/2021 19:34:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 19:34:27,041 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:34:27,042 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:34:27,059 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:34:27,060 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:34:57,055 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:34:57,056 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:34:57,072 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:34:57,074 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:35:02,874 DEBUG connecting to MongoDB Started
+2021-06-01 19:35:03,071 DEBUG connecting to MongoDB Finished
+2021-06-01 19:35:03,073 DEBUG connecting to MongoDB Started
+2021-06-01 19:35:03,238 DEBUG connecting to MongoDB Finished
+2021-06-01 19:35:03,376 DEBUG new_auth_plugin: caching_sha2_password
+2021-06-01 19:35:03,464 INFO in save_single_record()
+2021-06-01 19:35:03,465 INFO in get_db()
+2021-06-01 19:35:03,816 INFO out save_single_record()
+2021-06-01 19:35:03,821 INFO in save_single_record()
+2021-06-01 19:35:03,821 INFO in get_db()
+2021-06-01 19:35:03,968 INFO out save_single_record()
+2021-06-01 19:35:06,479 INFO in save_single_record()
+2021-06-01 19:35:06,480 INFO in get_db()
+2021-06-01 19:35:06,497 INFO out save_single_record()
+2021-06-01 19:35:06,499 INFO in save_single_record()
+2021-06-01 19:35:06,499 INFO in get_db()
+2021-06-01 19:35:06,557 INFO out save_single_record()
+2021-06-01 19:35:06,614 INFO 127.0.0.1 - - [01/Jun/2021 19:35:06] "POST /form/create-table HTTP/1.1" 200 -
+2021-06-01 19:35:06,726 INFO 127.0.0.1 - - [01/Jun/2021 19:35:06] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 19:35:27,073 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:35:27,074 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:35:27,090 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:35:27,093 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:35:57,080 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:35:57,081 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:35:57,108 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:35:57,111 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:36:27,113 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:36:27,115 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:36:27,129 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:36:27,138 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:36:57,131 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:36:57,132 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:36:57,148 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:36:57,150 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:37:27,148 DEBUG Sending options message heartbeat on idle connection (3032366375432) 127.0.0.1:9042
+2021-06-01 19:37:27,150 DEBUG Sending options message heartbeat on idle connection (3032366375656) 127.0.0.1:9042
+2021-06-01 19:37:27,165 DEBUG Received options response on connection (3032366375432) from 127.0.0.1:9042
+2021-06-01 19:37:27,194 DEBUG Received options response on connection (3032366375656) from 127.0.0.1:9042
+2021-06-01 19:48:01,047 DEBUG connecting to MongoDB Started
+2021-06-01 19:48:01,773 DEBUG connecting to MongoDB Finished
+2021-06-01 19:48:01,775 DEBUG connecting to MongoDB Started
+2021-06-01 19:48:01,855 DEBUG connecting to MongoDB Finished
+2021-06-01 19:48:02,062 DEBUG new_auth_plugin: caching_sha2_password
+2021-06-01 19:48:02,249 INFO in save_single_record()
+2021-06-01 19:48:02,250 INFO in get_db()
+2021-06-01 19:48:02,447 INFO out save_single_record()
+2021-06-01 19:48:02,451 INFO in save_single_record()
+2021-06-01 19:48:02,451 INFO in get_db()
+2021-06-01 19:48:02,617 INFO out save_single_record()
+2021-06-01 19:48:02,655 INFO in save_single_record()
+2021-06-01 19:48:02,655 INFO in get_db()
+2021-06-01 19:48:02,700 INFO out save_single_record()
+2021-06-01 19:48:02,701 INFO in save_single_record()
+2021-06-01 19:48:02,701 INFO in get_db()
+2021-06-01 19:48:02,729 INFO out save_single_record()
+2021-06-01 19:48:02,737 INFO 127.0.0.1 - - [01/Jun/2021 19:48:02] "POST /form/save-record HTTP/1.1" 200 -
+2021-06-01 20:21:09,884 DEBUG connecting to MongoDB Started
+2021-06-01 20:21:10,767 DEBUG connecting to MongoDB Finished
+2021-06-01 20:21:10,769 DEBUG connecting to MongoDB Started
+2021-06-01 20:21:10,912 DEBUG connecting to MongoDB Finished
+2021-06-01 20:21:11,082 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:21:11,084 DEBUG Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2021-06-01 20:21:11,093 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:21:11,110 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:21:11,127 DEBUG Starting asyncore event loop
+2021-06-01 20:21:11,140 DEBUG Sending initial options message for new connection (1323541726768) to 127.0.0.1:9042
+2021-06-01 20:21:11,163 DEBUG Defuncting connection (1323541726768) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:21:11,165 DEBUG Closing connection (1323541726768) to 127.0.0.1:9042
+2021-06-01 20:21:11,167 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:21:11,170 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:21:12,669 DEBUG Sending initial options message for new connection (1323541727608) to 127.0.0.1:9042
+2021-06-01 20:21:12,685 DEBUG Defuncting connection (1323541727608) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:21:12,686 DEBUG Closing connection (1323541727608) to 127.0.0.1:9042
+2021-06-01 20:21:12,690 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:21:12,692 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:21:14,203 DEBUG Sending initial options message for new connection (1323541728616) to 127.0.0.1:9042
+2021-06-01 20:21:14,221 ERROR Closing connection <AsyncoreConnection(1323541728616) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:21:14,222 DEBUG Defuncting connection (1323541728616) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:21:14,223 DEBUG Closing connection (1323541728616) to 127.0.0.1:9042
+2021-06-01 20:21:14,224 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:21:14,226 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:21:15,748 DEBUG Sending initial options message for new connection (1323541727104) to 127.0.0.1:9042
+2021-06-01 20:21:15,766 DEBUG Received options response on new connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:21:15,767 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:21:15,768 DEBUG Sending StartupMessage on <AsyncoreConnection(1323541727104) 127.0.0.1:9042>
+2021-06-01 20:21:15,772 DEBUG Sent StartupMessage on <AsyncoreConnection(1323541727104) 127.0.0.1:9042>
+2021-06-01 20:21:15,778 DEBUG Got ReadyMessage on new connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:21:15,778 DEBUG [control connection] Established new connection <AsyncoreConnection(1323541727104) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:21:15,883 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:21:15,884 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:21:15,885 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:21:15,885 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:21:15,959 DEBUG Control connection created
+2021-06-01 20:21:15,965 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:21:17,128 DEBUG Sending initial options message for new connection (1323541726880) to 127.0.0.1:9042
+2021-06-01 20:21:17,140 DEBUG Received options response on new connection (1323541726880) from 127.0.0.1:9042
+2021-06-01 20:21:17,141 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:21:17,142 DEBUG Sending StartupMessage on <AsyncoreConnection(1323541726880) 127.0.0.1:9042>
+2021-06-01 20:21:17,143 DEBUG Sent StartupMessage on <AsyncoreConnection(1323541726880) 127.0.0.1:9042>
+2021-06-01 20:21:17,149 DEBUG Got ReadyMessage on new connection (1323541726880) from 127.0.0.1:9042
+2021-06-01 20:21:17,151 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:21:17,151 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:21:17,153 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:21:17,161 DEBUG Started Session with client_id 495079b9-8ef8-4f4c-a101-c110d02948ba and session_id a9f4a11e-76fd-4160-9ed4-847320ee54ba
+2021-06-01 20:21:17,162 INFO in save_single_record()
+2021-06-01 20:21:17,163 INFO in get_db()
+2021-06-01 20:21:17,345 INFO out save_single_record()
+2021-06-01 20:21:17,361 INFO in save_single_record()
+2021-06-01 20:21:17,362 INFO in get_db()
+2021-06-01 20:21:17,870 INFO out save_single_record()
+2021-06-01 20:21:17,871 INFO in save_single_record()
+2021-06-01 20:21:17,872 INFO in get_db()
+2021-06-01 20:21:17,903 INFO out save_single_record()
+2021-06-01 20:21:17,906 INFO 127.0.0.1 - - [01/Jun/2021 20:21:17] "POST /form/save-record HTTP/1.1" 200 -
+2021-06-01 20:21:59,165 DEBUG connecting to MongoDB Started
+2021-06-01 20:21:59,402 DEBUG Closing connection (1323541726880) to 127.0.0.1:9042
+2021-06-01 20:21:59,404 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:21:59,421 DEBUG connecting to MongoDB Finished
+2021-06-01 20:21:59,429 DEBUG connecting to MongoDB Started
+2021-06-01 20:21:59,614 DEBUG connecting to MongoDB Finished
+2021-06-01 20:21:59,685 DEBUG new_auth_plugin: caching_sha2_password
+2021-06-01 20:21:59,733 INFO in save_single_record()
+2021-06-01 20:21:59,734 INFO in get_db()
+2021-06-01 20:22:00,092 INFO out save_single_record()
+2021-06-01 20:22:00,221 INFO in save_single_record()
+2021-06-01 20:22:00,222 INFO in get_db()
+2021-06-01 20:22:00,552 INFO out save_single_record()
+2021-06-01 20:22:00,554 INFO in save_single_record()
+2021-06-01 20:22:00,555 INFO in get_db()
+2021-06-01 20:22:00,605 INFO out save_single_record()
+2021-06-01 20:22:00,630 INFO 127.0.0.1 - - [01/Jun/2021 20:22:00] "POST /form/create-db HTTP/1.1" 200 -
+2021-06-01 20:22:00,764 INFO 127.0.0.1 - - [01/Jun/2021 20:22:00] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:22:00,779 INFO 127.0.0.1 - - [01/Jun/2021 20:22:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:22:04,215 INFO 127.0.0.1 - - [01/Jun/2021 20:22:04] "POST / HTTP/1.1" 200 -
+2021-06-01 20:22:04,332 INFO 127.0.0.1 - - [01/Jun/2021 20:22:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:22:15,889 DEBUG connecting to MongoDB Started
+2021-06-01 20:22:15,977 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:22:15,994 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:22:16,049 DEBUG connecting to MongoDB Finished
+2021-06-01 20:22:16,053 DEBUG connecting to MongoDB Started
+2021-06-01 20:22:16,234 DEBUG connecting to MongoDB Finished
+2021-06-01 20:22:16,290 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:22:16,292 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:22:16,294 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:22:16,332 DEBUG Sending initial options message for new connection (1323541587784) to 127.0.0.1:9042
+2021-06-01 20:22:16,349 DEBUG Defuncting connection (1323541587784) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:22:16,349 DEBUG Closing connection (1323541587784) to 127.0.0.1:9042
+2021-06-01 20:22:16,350 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:22:16,351 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:22:17,851 DEBUG Sending initial options message for new connection (1323542303128) to 127.0.0.1:9042
+2021-06-01 20:22:17,868 DEBUG Defuncting connection (1323542303128) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:22:17,869 DEBUG Closing connection (1323542303128) to 127.0.0.1:9042
+2021-06-01 20:22:17,869 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:22:17,871 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:22:19,377 DEBUG Sending initial options message for new connection (1323542306544) to 127.0.0.1:9042
+2021-06-01 20:22:19,396 ERROR Closing connection <AsyncoreConnection(1323542306544) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:22:19,397 DEBUG Defuncting connection (1323542306544) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:22:19,398 DEBUG Closing connection (1323542306544) to 127.0.0.1:9042
+2021-06-01 20:22:19,399 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:22:19,401 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:22:20,900 DEBUG Sending initial options message for new connection (1323541587784) to 127.0.0.1:9042
+2021-06-01 20:22:20,917 DEBUG Received options response on new connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:22:20,917 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:22:20,918 DEBUG Sending StartupMessage on <AsyncoreConnection(1323541587784) 127.0.0.1:9042>
+2021-06-01 20:22:20,919 DEBUG Sent StartupMessage on <AsyncoreConnection(1323541587784) 127.0.0.1:9042>
+2021-06-01 20:22:20,923 DEBUG Got ReadyMessage on new connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:22:20,929 DEBUG [control connection] Established new connection <AsyncoreConnection(1323541587784) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:22:21,020 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:22:21,021 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:22:21,023 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:22:21,024 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:22:21,095 DEBUG Control connection created
+2021-06-01 20:22:21,098 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:22:22,243 DEBUG Sending initial options message for new connection (1323542291736) to 127.0.0.1:9042
+2021-06-01 20:22:22,260 DEBUG Received options response on new connection (1323542291736) from 127.0.0.1:9042
+2021-06-01 20:22:22,261 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:22:22,262 DEBUG Sending StartupMessage on <AsyncoreConnection(1323542291736) 127.0.0.1:9042>
+2021-06-01 20:22:22,262 DEBUG Sent StartupMessage on <AsyncoreConnection(1323542291736) 127.0.0.1:9042>
+2021-06-01 20:22:22,265 DEBUG Got ReadyMessage on new connection (1323542291736) from 127.0.0.1:9042
+2021-06-01 20:22:22,266 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:22:22,267 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:22:22,268 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:22:22,268 DEBUG Started Session with client_id 85c6dd6f-e389-4344-a8ff-28cadc587762 and session_id d4370957-2676-4c8d-a342-41fce3b00933
+2021-06-01 20:22:22,270 INFO in save_single_record()
+2021-06-01 20:22:22,271 INFO in get_db()
+2021-06-01 20:22:22,854 INFO out save_single_record()
+2021-06-01 20:22:22,882 INFO in save_single_record()
+2021-06-01 20:22:22,883 INFO in get_db()
+2021-06-01 20:22:23,445 INFO out save_single_record()
+2021-06-01 20:22:23,446 INFO in save_single_record()
+2021-06-01 20:22:23,446 INFO in get_db()
+2021-06-01 20:22:23,530 INFO out save_single_record()
+2021-06-01 20:22:23,539 INFO 127.0.0.1 - - [01/Jun/2021 20:22:23] "POST /form/create-db HTTP/1.1" 200 -
+2021-06-01 20:22:23,737 INFO 127.0.0.1 - - [01/Jun/2021 20:22:23] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:22:23,754 INFO 127.0.0.1 - - [01/Jun/2021 20:22:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:22:32,714 INFO 127.0.0.1 - - [01/Jun/2021 20:22:32] "POST / HTTP/1.1" 200 -
+2021-06-01 20:22:32,801 INFO 127.0.0.1 - - [01/Jun/2021 20:22:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:22:45,989 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:22:46,006 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:22:50,716 DEBUG connecting to MongoDB Started
+2021-06-01 20:22:50,899 DEBUG connecting to MongoDB Finished
+2021-06-01 20:22:50,904 DEBUG Closing connection (1323542291736) to 127.0.0.1:9042
+2021-06-01 20:22:50,905 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:22:50,907 DEBUG connecting to MongoDB Started
+2021-06-01 20:22:51,065 DEBUG connecting to MongoDB Finished
+2021-06-01 20:22:51,069 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:22:51,070 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:22:51,070 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:22:51,773 DEBUG Sending initial options message for new connection (1323560708528) to 127.0.0.1:9042
+2021-06-01 20:22:51,789 DEBUG Defuncting connection (1323560708528) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:22:51,790 DEBUG Closing connection (1323560708528) to 127.0.0.1:9042
+2021-06-01 20:22:51,791 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:22:51,792 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:22:53,300 DEBUG Sending initial options message for new connection (1323542308904) to 127.0.0.1:9042
+2021-06-01 20:22:53,318 DEBUG Defuncting connection (1323542308904) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:22:53,319 DEBUG Closing connection (1323542308904) to 127.0.0.1:9042
+2021-06-01 20:22:53,320 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:22:53,321 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:22:54,834 DEBUG Sending initial options message for new connection (1323542291736) to 127.0.0.1:9042
+2021-06-01 20:22:54,848 ERROR Closing connection <AsyncoreConnection(1323542291736) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:22:54,849 DEBUG Defuncting connection (1323542291736) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:22:54,849 DEBUG Closing connection (1323542291736) to 127.0.0.1:9042
+2021-06-01 20:22:54,850 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:22:54,851 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:22:56,354 DEBUG Sending initial options message for new connection (1323542308904) to 127.0.0.1:9042
+2021-06-01 20:22:56,370 DEBUG Received options response on new connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:22:56,370 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:22:56,370 DEBUG Sending StartupMessage on <AsyncoreConnection(1323542308904) 127.0.0.1:9042>
+2021-06-01 20:22:56,371 DEBUG Sent StartupMessage on <AsyncoreConnection(1323542308904) 127.0.0.1:9042>
+2021-06-01 20:22:56,373 DEBUG Got ReadyMessage on new connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:22:56,374 DEBUG [control connection] Established new connection <AsyncoreConnection(1323542308904) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:22:56,485 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:22:56,488 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:22:56,489 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:22:56,490 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:22:56,538 DEBUG Control connection created
+2021-06-01 20:22:56,542 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:22:57,757 DEBUG Sending initial options message for new connection (1323560700728) to 127.0.0.1:9042
+2021-06-01 20:22:57,773 DEBUG Received options response on new connection (1323560700728) from 127.0.0.1:9042
+2021-06-01 20:22:57,774 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:22:57,775 DEBUG Sending StartupMessage on <AsyncoreConnection(1323560700728) 127.0.0.1:9042>
+2021-06-01 20:22:57,776 DEBUG Sent StartupMessage on <AsyncoreConnection(1323560700728) 127.0.0.1:9042>
+2021-06-01 20:22:57,779 DEBUG Got ReadyMessage on new connection (1323560700728) from 127.0.0.1:9042
+2021-06-01 20:22:57,780 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:22:57,780 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:22:57,782 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:22:57,783 DEBUG Started Session with client_id 32fc91b0-5abb-421d-b310-ec5b621180e7 and session_id cb6f3ceb-cad3-4700-9746-69d1c062b446
+2021-06-01 20:22:57,784 INFO in save_single_record()
+2021-06-01 20:22:57,784 INFO in get_db()
+2021-06-01 20:22:58,009 INFO out save_single_record()
+2021-06-01 20:22:58,025 INFO in save_single_record()
+2021-06-01 20:22:58,025 INFO in get_db()
+2021-06-01 20:22:58,421 INFO out save_single_record()
+2021-06-01 20:22:58,422 INFO in save_single_record()
+2021-06-01 20:22:58,423 INFO in get_db()
+2021-06-01 20:22:58,458 INFO out save_single_record()
+2021-06-01 20:22:58,463 INFO 127.0.0.1 - - [01/Jun/2021 20:22:58] "POST /form/create-table HTTP/1.1" 200 -
+2021-06-01 20:23:16,013 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:23:16,030 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:23:21,108 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:23:21,127 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:23:35,792 DEBUG connecting to MongoDB Started
+2021-06-01 20:23:35,992 DEBUG Closing connection (1323560700728) to 127.0.0.1:9042
+2021-06-01 20:23:35,992 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:23:35,998 DEBUG connecting to MongoDB Finished
+2021-06-01 20:23:36,000 DEBUG connecting to MongoDB Started
+2021-06-01 20:23:36,153 DEBUG connecting to MongoDB Finished
+2021-06-01 20:23:36,190 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:23:36,191 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:23:36,194 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:23:36,571 DEBUG Sending initial options message for new connection (1323542297904) to 127.0.0.1:9042
+2021-06-01 20:23:36,589 DEBUG Defuncting connection (1323542297904) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:23:36,590 DEBUG Closing connection (1323542297904) to 127.0.0.1:9042
+2021-06-01 20:23:36,591 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:23:36,592 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:23:38,093 DEBUG Sending initial options message for new connection (1323560714928) to 127.0.0.1:9042
+2021-06-01 20:23:38,110 DEBUG Defuncting connection (1323560714928) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:23:38,112 DEBUG Closing connection (1323560714928) to 127.0.0.1:9042
+2021-06-01 20:23:38,115 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:23:38,116 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:23:39,626 DEBUG Sending initial options message for new connection (1323560702640) to 127.0.0.1:9042
+2021-06-01 20:23:39,642 ERROR Closing connection <AsyncoreConnection(1323560702640) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:23:39,643 DEBUG Defuncting connection (1323560702640) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:23:39,643 DEBUG Closing connection (1323560702640) to 127.0.0.1:9042
+2021-06-01 20:23:39,644 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:23:39,645 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:23:41,150 DEBUG Sending initial options message for new connection (1323542294768) to 127.0.0.1:9042
+2021-06-01 20:23:41,167 DEBUG Received options response on new connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:23:41,167 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:23:41,168 DEBUG Sending StartupMessage on <AsyncoreConnection(1323542294768) 127.0.0.1:9042>
+2021-06-01 20:23:41,168 DEBUG Sent StartupMessage on <AsyncoreConnection(1323542294768) 127.0.0.1:9042>
+2021-06-01 20:23:41,171 DEBUG Got ReadyMessage on new connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:23:41,172 DEBUG [control connection] Established new connection <AsyncoreConnection(1323542294768) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:23:41,217 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:23:41,218 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:23:41,218 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:23:41,219 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:23:41,275 DEBUG Control connection created
+2021-06-01 20:23:41,281 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:23:42,541 DEBUG Sending initial options message for new connection (1323561181760) to 127.0.0.1:9042
+2021-06-01 20:23:42,562 DEBUG Received options response on new connection (1323561181760) from 127.0.0.1:9042
+2021-06-01 20:23:42,566 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:23:42,567 DEBUG Sending StartupMessage on <AsyncoreConnection(1323561181760) 127.0.0.1:9042>
+2021-06-01 20:23:42,568 DEBUG Sent StartupMessage on <AsyncoreConnection(1323561181760) 127.0.0.1:9042>
+2021-06-01 20:23:42,573 DEBUG Got ReadyMessage on new connection (1323561181760) from 127.0.0.1:9042
+2021-06-01 20:23:42,574 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:23:42,575 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:23:42,577 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:23:42,577 DEBUG Started Session with client_id ec61fc37-4845-4330-bfea-6f08ff3c97d9 and session_id 28c8686b-3af5-42c1-9306-8506978dfc9f
+2021-06-01 20:23:42,578 INFO in save_single_record()
+2021-06-01 20:23:42,579 INFO in get_db()
+2021-06-01 20:23:42,957 INFO out save_single_record()
+2021-06-01 20:23:42,964 INFO in save_single_record()
+2021-06-01 20:23:42,965 INFO in get_db()
+2021-06-01 20:23:43,299 INFO out save_single_record()
+2021-06-01 20:23:43,301 INFO in save_single_record()
+2021-06-01 20:23:43,302 INFO in get_db()
+2021-06-01 20:23:43,366 INFO out save_single_record()
+2021-06-01 20:23:43,371 INFO 127.0.0.1 - - [01/Jun/2021 20:23:43] "POST /form/save-record HTTP/1.1" 200 -
+2021-06-01 20:23:46,019 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:23:46,038 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:23:51,121 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:23:51,138 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:23:56,553 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:23:56,574 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:24:16,026 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:24:16,041 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:24:21,126 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:24:21,143 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:24:26,568 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:24:26,585 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:24:41,287 DEBUG Sending options message heartbeat on idle connection (1323561181760) 127.0.0.1:9042
+2021-06-01 20:24:41,288 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:24:41,304 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:24:41,306 DEBUG Received options response on connection (1323561181760) from 127.0.0.1:9042
+2021-06-01 20:24:46,033 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:24:46,050 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:24:51,134 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:24:51,152 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:24:56,581 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:24:56,598 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:25:11,297 DEBUG Sending options message heartbeat on idle connection (1323561181760) 127.0.0.1:9042
+2021-06-01 20:25:11,300 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:25:11,315 DEBUG Received options response on connection (1323561181760) from 127.0.0.1:9042
+2021-06-01 20:25:11,320 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:25:16,047 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:25:16,065 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:25:21,146 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:25:21,163 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:25:22,456 DEBUG connecting to MongoDB Started
+2021-06-01 20:25:22,684 DEBUG Closing connection (1323561181760) to 127.0.0.1:9042
+2021-06-01 20:25:22,687 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:25:22,694 DEBUG connecting to MongoDB Finished
+2021-06-01 20:25:22,697 DEBUG connecting to MongoDB Started
+2021-06-01 20:25:22,914 DEBUG connecting to MongoDB Finished
+2021-06-01 20:25:22,921 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:25:22,922 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:25:22,923 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:25:23,472 DEBUG Sending initial options message for new connection (1323560698320) to 127.0.0.1:9042
+2021-06-01 20:25:23,486 DEBUG Defuncting connection (1323560698320) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:25:23,488 DEBUG Closing connection (1323560698320) to 127.0.0.1:9042
+2021-06-01 20:25:23,489 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:25:23,490 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:25:24,992 DEBUG Sending initial options message for new connection (1323560706400) to 127.0.0.1:9042
+2021-06-01 20:25:25,010 DEBUG Defuncting connection (1323560706400) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:25:25,012 DEBUG Closing connection (1323560706400) to 127.0.0.1:9042
+2021-06-01 20:25:25,013 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:25:25,014 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:25:26,516 DEBUG Sending initial options message for new connection (1323541526792) to 127.0.0.1:9042
+2021-06-01 20:25:26,545 ERROR Closing connection <AsyncoreConnection(1323541526792) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:25:26,549 DEBUG Defuncting connection (1323541526792) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:25:26,549 DEBUG Closing connection (1323541526792) to 127.0.0.1:9042
+2021-06-01 20:25:26,550 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:25:26,552 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:25:26,610 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:25:26,625 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:25:28,027 DEBUG Sending initial options message for new connection (1323541527240) to 127.0.0.1:9042
+2021-06-01 20:25:28,044 DEBUG Received options response on new connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:25:28,045 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:25:28,046 DEBUG Sending StartupMessage on <AsyncoreConnection(1323541527240) 127.0.0.1:9042>
+2021-06-01 20:25:28,047 DEBUG Sent StartupMessage on <AsyncoreConnection(1323541527240) 127.0.0.1:9042>
+2021-06-01 20:25:28,052 DEBUG Got ReadyMessage on new connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:25:28,055 DEBUG [control connection] Established new connection <AsyncoreConnection(1323541527240) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:25:28,114 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:25:28,116 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:25:28,117 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:25:28,121 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:25:28,181 DEBUG Control connection created
+2021-06-01 20:25:28,187 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:25:29,395 DEBUG Sending initial options message for new connection (1323542306888) to 127.0.0.1:9042
+2021-06-01 20:25:29,414 DEBUG Received options response on new connection (1323542306888) from 127.0.0.1:9042
+2021-06-01 20:25:29,415 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:25:29,415 DEBUG Sending StartupMessage on <AsyncoreConnection(1323542306888) 127.0.0.1:9042>
+2021-06-01 20:25:29,416 DEBUG Sent StartupMessage on <AsyncoreConnection(1323542306888) 127.0.0.1:9042>
+2021-06-01 20:25:29,421 DEBUG Got ReadyMessage on new connection (1323542306888) from 127.0.0.1:9042
+2021-06-01 20:25:29,423 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:25:29,424 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:25:29,426 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:25:29,428 DEBUG Started Session with client_id d83dc808-7ed0-42bb-8101-d6afdf0a5abb and session_id 761f638e-115c-48e3-94cf-5f3b06db37a0
+2021-06-01 20:25:29,428 INFO in save_single_record()
+2021-06-01 20:25:29,429 INFO in get_db()
+2021-06-01 20:25:29,947 INFO out save_single_record()
+2021-06-01 20:25:29,993 INFO in save_single_record()
+2021-06-01 20:25:29,994 INFO in get_db()
+2021-06-01 20:25:30,365 INFO out save_single_record()
+2021-06-01 20:25:30,366 INFO in save_single_record()
+2021-06-01 20:25:30,366 INFO in get_db()
+2021-06-01 20:25:30,443 INFO out save_single_record()
+2021-06-01 20:25:30,447 INFO 127.0.0.1 - - [01/Jun/2021 20:25:30] "POST /form/create-table HTTP/1.1" 200 -
+2021-06-01 20:25:41,322 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:25:41,340 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:25:46,063 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:25:46,080 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:25:51,157 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:25:51,175 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:25:56,632 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:25:56,651 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:26:11,340 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:26:11,356 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:26:16,080 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:26:16,098 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:26:21,168 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:26:21,187 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:26:26,647 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:26:26,662 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:26:28,201 DEBUG Sending options message heartbeat on idle connection (1323542306888) 127.0.0.1:9042
+2021-06-01 20:26:28,202 DEBUG Sending options message heartbeat on idle connection (1323541527240) 127.0.0.1:9042
+2021-06-01 20:26:28,219 DEBUG Received options response on connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:26:28,221 DEBUG Received options response on connection (1323542306888) from 127.0.0.1:9042
+2021-06-01 20:26:41,343 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:26:41,376 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:26:46,095 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:26:46,112 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:26:51,182 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:26:51,200 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:26:51,489 DEBUG connecting to MongoDB Started
+2021-06-01 20:26:51,675 DEBUG Closing connection (1323542306888) to 127.0.0.1:9042
+2021-06-01 20:26:51,676 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:26:51,678 DEBUG connecting to MongoDB Finished
+2021-06-01 20:26:51,681 DEBUG connecting to MongoDB Started
+2021-06-01 20:26:51,842 DEBUG connecting to MongoDB Finished
+2021-06-01 20:26:51,867 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:26:51,868 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:26:51,869 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:26:53,071 DEBUG Sending initial options message for new connection (1323561660824) to 127.0.0.1:9042
+2021-06-01 20:26:53,088 DEBUG Defuncting connection (1323561660824) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:26:53,090 DEBUG Closing connection (1323561660824) to 127.0.0.1:9042
+2021-06-01 20:26:53,094 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:26:53,097 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:26:54,596 DEBUG Sending initial options message for new connection (1323541586272) to 127.0.0.1:9042
+2021-06-01 20:26:54,612 DEBUG Defuncting connection (1323541586272) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:26:54,613 DEBUG Closing connection (1323541586272) to 127.0.0.1:9042
+2021-06-01 20:26:54,615 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:26:54,616 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:26:56,120 DEBUG Sending initial options message for new connection (1323561177608) to 127.0.0.1:9042
+2021-06-01 20:26:56,136 ERROR Closing connection <AsyncoreConnection(1323561177608) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:26:56,138 DEBUG Defuncting connection (1323561177608) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:26:56,139 DEBUG Closing connection (1323561177608) to 127.0.0.1:9042
+2021-06-01 20:26:56,141 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:26:56,144 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:26:56,662 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:26:56,679 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:26:57,613 DEBUG Sending initial options message for new connection (1323541586272) to 127.0.0.1:9042
+2021-06-01 20:26:57,630 DEBUG Received options response on new connection (1323541586272) from 127.0.0.1:9042
+2021-06-01 20:26:57,633 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:26:57,635 DEBUG Sending StartupMessage on <AsyncoreConnection(1323541586272) 127.0.0.1:9042>
+2021-06-01 20:26:57,639 DEBUG Sent StartupMessage on <AsyncoreConnection(1323541586272) 127.0.0.1:9042>
+2021-06-01 20:26:57,648 DEBUG Got ReadyMessage on new connection (1323541586272) from 127.0.0.1:9042
+2021-06-01 20:26:57,650 DEBUG [control connection] Established new connection <AsyncoreConnection(1323541586272) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:26:57,697 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:26:57,699 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:26:57,700 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:26:57,702 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:26:57,781 DEBUG Control connection created
+2021-06-01 20:26:57,787 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:26:58,218 DEBUG Sending options message heartbeat on idle connection (1323541527240) 127.0.0.1:9042
+2021-06-01 20:26:58,237 DEBUG Received options response on connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:26:59,011 DEBUG Sending initial options message for new connection (1323561663792) to 127.0.0.1:9042
+2021-06-01 20:26:59,027 DEBUG Received options response on new connection (1323561663792) from 127.0.0.1:9042
+2021-06-01 20:26:59,028 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:26:59,030 DEBUG Sending StartupMessage on <AsyncoreConnection(1323561663792) 127.0.0.1:9042>
+2021-06-01 20:26:59,031 DEBUG Sent StartupMessage on <AsyncoreConnection(1323561663792) 127.0.0.1:9042>
+2021-06-01 20:26:59,037 DEBUG Got ReadyMessage on new connection (1323561663792) from 127.0.0.1:9042
+2021-06-01 20:26:59,038 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:26:59,038 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:26:59,041 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:26:59,042 DEBUG Started Session with client_id 3e16b51f-d9d1-4a2e-8633-03f9d4193077 and session_id 648bacbf-2daf-4491-983b-5507e3ff1aea
+2021-06-01 20:26:59,043 INFO in save_single_record()
+2021-06-01 20:26:59,044 INFO in get_db()
+2021-06-01 20:26:59,411 INFO out save_single_record()
+2021-06-01 20:27:01,932 DEBUG Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'emp_db', 'table': 'employee'}, stream_id=-1, trace_id=None)>
+2021-06-01 20:27:01,942 DEBUG Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'emp_db', 'table': 'employee'}, stream_id=-1, trace_id=None)>
+2021-06-01 20:27:01,944 DEBUG Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'emp_db', 'table': 'employee'}, stream_id=-1, trace_id=None)>
+2021-06-01 20:27:01,946 DEBUG Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'emp_db', 'table': 'employee'}, stream_id=-1, trace_id=None)>
+2021-06-01 20:27:01,947 DEBUG Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'emp_db', 'table': 'employee'}, stream_id=-1, trace_id=None)>
+2021-06-01 20:27:01,978 DEBUG Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'emp_db', 'table': 'employee'}, stream_id=-1, trace_id=None)>
+2021-06-01 20:27:02,020 DEBUG Refreshing schema in response to schema change. {'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'emp_db', 'table': 'employee'}
+2021-06-01 20:27:02,029 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 20:27:02,055 DEBUG [control connection] Schemas match
+2021-06-01 20:27:02,127 INFO in save_single_record()
+2021-06-01 20:27:02,128 INFO in get_db()
+2021-06-01 20:27:02,168 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 20:27:02,186 DEBUG [control connection] Schemas match
+2021-06-01 20:27:02,283 INFO out save_single_record()
+2021-06-01 20:27:02,284 INFO in save_single_record()
+2021-06-01 20:27:02,285 INFO in get_db()
+2021-06-01 20:27:02,342 INFO out save_single_record()
+2021-06-01 20:27:02,347 INFO 127.0.0.1 - - [01/Jun/2021 20:27:02] "POST /form/create-table HTTP/1.1" 200 -
+2021-06-01 20:27:02,515 INFO 127.0.0.1 - - [01/Jun/2021 20:27:02] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:27:02,530 INFO 127.0.0.1 - - [01/Jun/2021 20:27:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:27:02,626 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 20:27:02,647 DEBUG [control connection] Schemas match
+2021-06-01 20:27:02,839 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 20:27:02,862 DEBUG [control connection] Schemas match
+2021-06-01 20:27:02,917 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 20:27:02,937 DEBUG [control connection] Schemas match
+2021-06-01 20:27:03,429 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 20:27:03,452 DEBUG [control connection] Schemas match
+2021-06-01 20:27:03,642 DEBUG [control connection] Waiting for schema agreement
+2021-06-01 20:27:03,661 DEBUG [control connection] Schemas match
+2021-06-01 20:27:13,318 INFO 127.0.0.1 - - [01/Jun/2021 20:27:13] "POST / HTTP/1.1" 200 -
+2021-06-01 20:27:13,385 INFO 127.0.0.1 - - [01/Jun/2021 20:27:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:27:33,584 DEBUG Closing connection (1323561663792) to 127.0.0.1:9042
+2021-06-01 20:27:33,596 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:27:33,612 DEBUG connecting to MongoDB Started
+2021-06-01 20:27:33,803 DEBUG connecting to MongoDB Finished
+2021-06-01 20:27:33,806 DEBUG connecting to MongoDB Started
+2021-06-01 20:27:33,963 DEBUG connecting to MongoDB Finished
+2021-06-01 20:27:33,967 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:27:33,969 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:27:33,970 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:27:34,219 DEBUG Sending initial options message for new connection (1323562543648) to 127.0.0.1:9042
+2021-06-01 20:27:34,235 DEBUG Defuncting connection (1323562543648) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:27:34,235 DEBUG Closing connection (1323562543648) to 127.0.0.1:9042
+2021-06-01 20:27:34,236 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:27:34,237 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:27:35,738 DEBUG Sending initial options message for new connection (1323562531304) to 127.0.0.1:9042
+2021-06-01 20:27:35,757 DEBUG Defuncting connection (1323562531304) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:27:35,758 DEBUG Closing connection (1323562531304) to 127.0.0.1:9042
+2021-06-01 20:27:35,763 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:27:35,766 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:27:37,262 DEBUG Sending initial options message for new connection (1323561663792) to 127.0.0.1:9042
+2021-06-01 20:27:37,280 ERROR Closing connection <AsyncoreConnection(1323561663792) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:27:37,281 DEBUG Defuncting connection (1323561663792) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:27:37,282 DEBUG Closing connection (1323561663792) to 127.0.0.1:9042
+2021-06-01 20:27:37,283 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:27:37,284 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:27:38,787 DEBUG Sending initial options message for new connection (1323561660880) to 127.0.0.1:9042
+2021-06-01 20:27:38,806 DEBUG Received options response on new connection (1323561660880) from 127.0.0.1:9042
+2021-06-01 20:27:38,807 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:27:38,809 DEBUG Sending StartupMessage on <AsyncoreConnection(1323561660880) 127.0.0.1:9042>
+2021-06-01 20:27:38,811 DEBUG Sent StartupMessage on <AsyncoreConnection(1323561660880) 127.0.0.1:9042>
+2021-06-01 20:27:38,816 DEBUG Got ReadyMessage on new connection (1323561660880) from 127.0.0.1:9042
+2021-06-01 20:27:38,818 DEBUG [control connection] Established new connection <AsyncoreConnection(1323561660880) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:27:38,875 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:27:38,876 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:27:38,877 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:27:38,878 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:27:38,925 DEBUG Control connection created
+2021-06-01 20:27:38,929 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:27:40,173 DEBUG Sending initial options message for new connection (1323562527096) to 127.0.0.1:9042
+2021-06-01 20:27:40,191 DEBUG Received options response on new connection (1323562527096) from 127.0.0.1:9042
+2021-06-01 20:27:40,192 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:27:40,194 DEBUG Sending StartupMessage on <AsyncoreConnection(1323562527096) 127.0.0.1:9042>
+2021-06-01 20:27:40,196 DEBUG Sent StartupMessage on <AsyncoreConnection(1323562527096) 127.0.0.1:9042>
+2021-06-01 20:27:40,203 DEBUG Got ReadyMessage on new connection (1323562527096) from 127.0.0.1:9042
+2021-06-01 20:27:40,205 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:27:40,206 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:27:40,207 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:27:40,208 DEBUG Started Session with client_id f3230004-2495-42ad-8b09-a53115c17dc7 and session_id 4b8d4f26-7ce1-4c46-ac30-0a8827917f26
+2021-06-01 20:27:40,209 INFO in save_single_record()
+2021-06-01 20:27:40,211 INFO in get_db()
+2021-06-01 20:27:40,368 INFO out save_single_record()
+2021-06-01 20:27:40,447 INFO in save_single_record()
+2021-06-01 20:27:40,448 INFO in get_db()
+2021-06-01 20:27:40,873 INFO out save_single_record()
+2021-06-01 20:27:40,874 INFO in save_single_record()
+2021-06-01 20:27:40,875 INFO in get_db()
+2021-06-01 20:27:40,902 INFO out save_single_record()
+2021-06-01 20:27:40,913 INFO 127.0.0.1 - - [01/Jun/2021 20:27:40] "POST /form/save-record HTTP/1.1" 200 -
+2021-06-01 20:27:41,052 INFO 127.0.0.1 - - [01/Jun/2021 20:27:41] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:27:41,083 INFO 127.0.0.1 - - [01/Jun/2021 20:27:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:27:41,367 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:27:41,395 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:27:43,306 INFO 127.0.0.1 - - [01/Jun/2021 20:27:43] "POST / HTTP/1.1" 200 -
+2021-06-01 20:27:43,366 INFO 127.0.0.1 - - [01/Jun/2021 20:27:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:27:46,107 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:27:46,123 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:27:51,197 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:27:51,216 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:27:56,692 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:27:56,709 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:27:57,809 DEBUG Sending options message heartbeat on idle connection (1323541586272) 127.0.0.1:9042
+2021-06-01 20:27:57,828 DEBUG Received options response on connection (1323541586272) from 127.0.0.1:9042
+2021-06-01 20:27:58,246 DEBUG Sending options message heartbeat on idle connection (1323541527240) 127.0.0.1:9042
+2021-06-01 20:27:58,263 DEBUG Received options response on connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:28:11,379 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:28:11,396 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:28:16,119 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:28:16,136 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:28:21,210 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:28:21,229 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:28:26,077 DEBUG connecting to MongoDB Started
+2021-06-01 20:28:26,274 DEBUG Closing connection (1323562527096) to 127.0.0.1:9042
+2021-06-01 20:28:26,275 DEBUG connecting to MongoDB Finished
+2021-06-01 20:28:26,275 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:28:26,282 DEBUG connecting to MongoDB Started
+2021-06-01 20:28:26,462 DEBUG connecting to MongoDB Finished
+2021-06-01 20:28:26,492 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:28:26,493 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:28:26,496 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:28:26,542 DEBUG Sending initial options message for new connection (1323563146096) to 127.0.0.1:9042
+2021-06-01 20:28:26,558 DEBUG Defuncting connection (1323563146096) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:28:26,560 DEBUG Closing connection (1323563146096) to 127.0.0.1:9042
+2021-06-01 20:28:26,561 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:28:26,569 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:28:26,698 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:28:26,714 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:28:27,827 DEBUG Sending options message heartbeat on idle connection (1323541586272) 127.0.0.1:9042
+2021-06-01 20:28:27,844 DEBUG Received options response on connection (1323541586272) from 127.0.0.1:9042
+2021-06-01 20:28:28,001 DEBUG Sending initial options message for new connection (1323562115424) to 127.0.0.1:9042
+2021-06-01 20:28:28,017 DEBUG Defuncting connection (1323562115424) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:28:28,019 DEBUG Closing connection (1323562115424) to 127.0.0.1:9042
+2021-06-01 20:28:28,023 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:28:28,026 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:28:28,262 DEBUG Sending options message heartbeat on idle connection (1323541527240) 127.0.0.1:9042
+2021-06-01 20:28:28,279 DEBUG Received options response on connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:28:29,499 DEBUG Sending initial options message for new connection (1323542294600) to 127.0.0.1:9042
+2021-06-01 20:28:29,515 ERROR Closing connection <AsyncoreConnection(1323542294600) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:28:29,517 DEBUG Defuncting connection (1323542294600) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:28:29,519 DEBUG Closing connection (1323542294600) to 127.0.0.1:9042
+2021-06-01 20:28:29,520 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:28:29,521 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:28:31,027 DEBUG Sending initial options message for new connection (1323562115424) to 127.0.0.1:9042
+2021-06-01 20:28:31,046 DEBUG Received options response on new connection (1323562115424) from 127.0.0.1:9042
+2021-06-01 20:28:31,048 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:28:31,049 DEBUG Sending StartupMessage on <AsyncoreConnection(1323562115424) 127.0.0.1:9042>
+2021-06-01 20:28:31,053 DEBUG Sent StartupMessage on <AsyncoreConnection(1323562115424) 127.0.0.1:9042>
+2021-06-01 20:28:31,059 DEBUG Got ReadyMessage on new connection (1323562115424) from 127.0.0.1:9042
+2021-06-01 20:28:31,062 DEBUG [control connection] Established new connection <AsyncoreConnection(1323562115424) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:28:31,126 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:28:31,128 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:28:31,129 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:28:31,131 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:28:31,244 DEBUG Control connection created
+2021-06-01 20:28:31,283 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:28:32,463 DEBUG Sending initial options message for new connection (1323562525528) to 127.0.0.1:9042
+2021-06-01 20:28:32,480 DEBUG Received options response on new connection (1323562525528) from 127.0.0.1:9042
+2021-06-01 20:28:32,481 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:28:32,481 DEBUG Sending StartupMessage on <AsyncoreConnection(1323562525528) 127.0.0.1:9042>
+2021-06-01 20:28:32,482 DEBUG Sent StartupMessage on <AsyncoreConnection(1323562525528) 127.0.0.1:9042>
+2021-06-01 20:28:32,510 DEBUG Got ReadyMessage on new connection (1323562525528) from 127.0.0.1:9042
+2021-06-01 20:28:32,511 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:28:32,511 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:28:32,513 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:28:32,514 DEBUG Started Session with client_id b8a2d7f6-f1e1-484e-bddf-7e4800a118f1 and session_id 1f72dd2c-0c2c-4f2f-a27b-8365a123b5de
+2021-06-01 20:28:32,516 INFO in save_single_record()
+2021-06-01 20:28:32,516 INFO in get_db()
+2021-06-01 20:28:32,794 INFO out save_single_record()
+2021-06-01 20:28:32,796 INFO in save_single_record()
+2021-06-01 20:28:32,798 INFO in get_db()
+2021-06-01 20:28:33,207 INFO out save_single_record()
+2021-06-01 20:28:33,305 INFO in save_single_record()
+2021-06-01 20:28:33,307 INFO in get_db()
+2021-06-01 20:28:33,358 INFO out save_single_record()
+2021-06-01 20:28:33,359 INFO in save_single_record()
+2021-06-01 20:28:33,360 INFO in get_db()
+2021-06-01 20:28:33,402 INFO out save_single_record()
+2021-06-01 20:28:33,407 INFO 127.0.0.1 - - [01/Jun/2021 20:28:33] "POST /form/update-record HTTP/1.1" 200 -
+2021-06-01 20:28:33,540 INFO 127.0.0.1 - - [01/Jun/2021 20:28:33] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:28:33,585 INFO 127.0.0.1 - - [01/Jun/2021 20:28:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:28:36,318 INFO 127.0.0.1 - - [01/Jun/2021 20:28:36] "POST / HTTP/1.1" 200 -
+2021-06-01 20:28:36,361 INFO 127.0.0.1 - - [01/Jun/2021 20:28:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:28:38,946 DEBUG Sending options message heartbeat on idle connection (1323561660880) 127.0.0.1:9042
+2021-06-01 20:28:38,961 DEBUG Received options response on connection (1323561660880) from 127.0.0.1:9042
+2021-06-01 20:28:41,423 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:28:41,439 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:28:46,135 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:28:46,153 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:28:51,222 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:28:51,238 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:28:56,714 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:28:56,731 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:28:57,835 DEBUG Sending options message heartbeat on idle connection (1323541586272) 127.0.0.1:9042
+2021-06-01 20:28:57,853 DEBUG Received options response on connection (1323541586272) from 127.0.0.1:9042
+2021-06-01 20:28:58,271 DEBUG Sending options message heartbeat on idle connection (1323541527240) 127.0.0.1:9042
+2021-06-01 20:28:58,288 DEBUG Received options response on connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:29:04,473 INFO 127.0.0.1 - - [01/Jun/2021 20:29:04] "POST /form/delete-record HTTP/1.1" 200 -
+2021-06-01 20:29:08,964 DEBUG Sending options message heartbeat on idle connection (1323561660880) 127.0.0.1:9042
+2021-06-01 20:29:08,983 DEBUG Received options response on connection (1323561660880) from 127.0.0.1:9042
+2021-06-01 20:29:11,442 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:29:11,461 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:29:16,152 DEBUG Sending options message heartbeat on idle connection (1323541727104) 127.0.0.1:9042
+2021-06-01 20:29:16,197 DEBUG Received options response on connection (1323541727104) from 127.0.0.1:9042
+2021-06-01 20:29:21,238 DEBUG Sending options message heartbeat on idle connection (1323541587784) 127.0.0.1:9042
+2021-06-01 20:29:21,254 DEBUG Received options response on connection (1323541587784) from 127.0.0.1:9042
+2021-06-01 20:29:26,719 DEBUG Sending options message heartbeat on idle connection (1323542308904) 127.0.0.1:9042
+2021-06-01 20:29:26,736 DEBUG Received options response on connection (1323542308904) from 127.0.0.1:9042
+2021-06-01 20:29:27,841 DEBUG Sending options message heartbeat on idle connection (1323541586272) 127.0.0.1:9042
+2021-06-01 20:29:27,864 DEBUG Received options response on connection (1323541586272) from 127.0.0.1:9042
+2021-06-01 20:29:28,341 DEBUG Sending options message heartbeat on idle connection (1323541527240) 127.0.0.1:9042
+2021-06-01 20:29:28,360 DEBUG Received options response on connection (1323541527240) from 127.0.0.1:9042
+2021-06-01 20:29:31,287 DEBUG Sending options message heartbeat on idle connection (1323562525528) 127.0.0.1:9042
+2021-06-01 20:29:31,288 DEBUG Sending options message heartbeat on idle connection (1323562115424) 127.0.0.1:9042
+2021-06-01 20:29:31,302 DEBUG Received options response on connection (1323562115424) from 127.0.0.1:9042
+2021-06-01 20:29:31,304 DEBUG Received options response on connection (1323562525528) from 127.0.0.1:9042
+2021-06-01 20:29:38,985 DEBUG Sending options message heartbeat on idle connection (1323561660880) 127.0.0.1:9042
+2021-06-01 20:29:38,991 DEBUG Received options response on connection (1323561660880) from 127.0.0.1:9042
+2021-06-01 20:29:41,445 DEBUG Sending options message heartbeat on idle connection (1323542294768) 127.0.0.1:9042
+2021-06-01 20:29:41,462 DEBUG Received options response on connection (1323542294768) from 127.0.0.1:9042
+2021-06-01 20:33:33,066 DEBUG connecting to MongoDB Started
+2021-06-01 20:33:33,854 DEBUG connecting to MongoDB Finished
+2021-06-01 20:33:33,856 DEBUG connecting to MongoDB Started
+2021-06-01 20:33:34,005 DEBUG connecting to MongoDB Finished
+2021-06-01 20:33:34,146 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:33:34,147 DEBUG Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2021-06-01 20:33:34,153 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:33:34,157 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:33:34,183 DEBUG Starting asyncore event loop
+2021-06-01 20:33:34,198 DEBUG Sending initial options message for new connection (2263033565704) to 127.0.0.1:9042
+2021-06-01 20:33:34,215 DEBUG Defuncting connection (2263033565704) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:33:34,216 DEBUG Closing connection (2263033565704) to 127.0.0.1:9042
+2021-06-01 20:33:34,217 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:33:34,218 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:33:35,723 DEBUG Sending initial options message for new connection (2263033508584) to 127.0.0.1:9042
+2021-06-01 20:33:35,738 DEBUG Defuncting connection (2263033508584) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:33:35,739 DEBUG Closing connection (2263033508584) to 127.0.0.1:9042
+2021-06-01 20:33:35,740 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:33:35,741 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:33:37,256 DEBUG Sending initial options message for new connection (2263033567104) to 127.0.0.1:9042
+2021-06-01 20:33:37,272 ERROR Closing connection <AsyncoreConnection(2263033567104) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:33:37,273 DEBUG Defuncting connection (2263033567104) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:33:37,274 DEBUG Closing connection (2263033567104) to 127.0.0.1:9042
+2021-06-01 20:33:37,275 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:33:37,276 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:33:38,783 DEBUG Sending initial options message for new connection (2263033508584) to 127.0.0.1:9042
+2021-06-01 20:33:38,800 DEBUG Received options response on new connection (2263033508584) from 127.0.0.1:9042
+2021-06-01 20:33:38,801 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:33:38,802 DEBUG Sending StartupMessage on <AsyncoreConnection(2263033508584) 127.0.0.1:9042>
+2021-06-01 20:33:38,808 DEBUG Sent StartupMessage on <AsyncoreConnection(2263033508584) 127.0.0.1:9042>
+2021-06-01 20:33:38,813 DEBUG Got ReadyMessage on new connection (2263033508584) from 127.0.0.1:9042
+2021-06-01 20:33:38,814 DEBUG [control connection] Established new connection <AsyncoreConnection(2263033508584) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:33:38,865 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:33:38,866 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:33:38,868 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:33:38,868 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:33:39,010 DEBUG Control connection created
+2021-06-01 20:33:39,021 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:33:40,155 DEBUG Sending initial options message for new connection (2263033742392) to 127.0.0.1:9042
+2021-06-01 20:33:40,174 DEBUG Received options response on new connection (2263033742392) from 127.0.0.1:9042
+2021-06-01 20:33:40,174 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:33:40,175 DEBUG Sending StartupMessage on <AsyncoreConnection(2263033742392) 127.0.0.1:9042>
+2021-06-01 20:33:40,175 DEBUG Sent StartupMessage on <AsyncoreConnection(2263033742392) 127.0.0.1:9042>
+2021-06-01 20:33:40,178 DEBUG Got ReadyMessage on new connection (2263033742392) from 127.0.0.1:9042
+2021-06-01 20:33:40,179 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:33:40,179 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:33:40,182 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:33:40,182 DEBUG Started Session with client_id 114f0d13-81f5-4efa-a3f8-1237d4a18075 and session_id e5d0e250-81cc-4201-b595-03594bf8c844
+2021-06-01 20:33:40,184 INFO in save_single_record()
+2021-06-01 20:33:40,184 INFO in get_db()
+2021-06-01 20:33:40,561 INFO out save_single_record()
+2021-06-01 20:33:40,562 INFO in save_single_record()
+2021-06-01 20:33:40,564 INFO in get_db()
+2021-06-01 20:33:41,054 INFO out save_single_record()
+2021-06-01 20:33:41,072 INFO in save_single_record()
+2021-06-01 20:33:41,073 INFO in get_db()
+2021-06-01 20:33:41,125 INFO out save_single_record()
+2021-06-01 20:33:41,126 INFO in save_single_record()
+2021-06-01 20:33:41,126 INFO in get_db()
+2021-06-01 20:33:41,188 INFO out save_single_record()
+2021-06-01 20:33:41,218 INFO 127.0.0.1 - - [01/Jun/2021 20:33:41] "POST /form/delete-record HTTP/1.1" 200 -
+2021-06-01 20:33:41,322 INFO 127.0.0.1 - - [01/Jun/2021 20:33:41] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:33:41,334 INFO 127.0.0.1 - - [01/Jun/2021 20:33:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:33:45,781 INFO 127.0.0.1 - - [01/Jun/2021 20:33:45] "POST / HTTP/1.1" 200 -
+2021-06-01 20:33:45,830 INFO 127.0.0.1 - - [01/Jun/2021 20:33:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:34:31,411 DEBUG connecting to MongoDB Started
+2021-06-01 20:34:31,564 DEBUG connecting to MongoDB Finished
+2021-06-01 20:34:31,565 INFO in save_single_record()
+2021-06-01 20:34:31,566 INFO in get_db()
+2021-06-01 20:34:31,568 DEBUG Closing connection (2263033742392) to 127.0.0.1:9042
+2021-06-01 20:34:31,569 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:34:32,007 INFO out save_single_record()
+2021-06-01 20:34:32,037 DEBUG connecting to MongoDB Started
+2021-06-01 20:34:32,190 DEBUG connecting to MongoDB Finished
+2021-06-01 20:34:32,192 DEBUG connecting to MongoDB Started
+2021-06-01 20:34:32,338 DEBUG connecting to MongoDB Finished
+2021-06-01 20:34:32,344 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:34:32,345 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:34:32,347 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:34:33,202 DEBUG Sending initial options message for new connection (2263034218032) to 127.0.0.1:9042
+2021-06-01 20:34:33,220 DEBUG Defuncting connection (2263034218032) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:34:33,221 DEBUG Closing connection (2263034218032) to 127.0.0.1:9042
+2021-06-01 20:34:33,222 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:34:33,224 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:34:34,731 DEBUG Sending initial options message for new connection (2263034202880) to 127.0.0.1:9042
+2021-06-01 20:34:34,747 DEBUG Defuncting connection (2263034202880) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:34:34,748 DEBUG Closing connection (2263034202880) to 127.0.0.1:9042
+2021-06-01 20:34:34,748 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:34:34,751 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:34:36,265 DEBUG Sending initial options message for new connection (2263034218872) to 127.0.0.1:9042
+2021-06-01 20:34:36,284 ERROR Closing connection <AsyncoreConnection(2263034218872) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:34:36,286 DEBUG Defuncting connection (2263034218872) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:34:36,287 DEBUG Closing connection (2263034218872) to 127.0.0.1:9042
+2021-06-01 20:34:36,289 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:34:36,291 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:34:37,793 DEBUG Sending initial options message for new connection (2263034202880) to 127.0.0.1:9042
+2021-06-01 20:34:37,808 DEBUG Received options response on new connection (2263034202880) from 127.0.0.1:9042
+2021-06-01 20:34:37,808 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:34:37,809 DEBUG Sending StartupMessage on <AsyncoreConnection(2263034202880) 127.0.0.1:9042>
+2021-06-01 20:34:37,809 DEBUG Sent StartupMessage on <AsyncoreConnection(2263034202880) 127.0.0.1:9042>
+2021-06-01 20:34:37,813 DEBUG Got ReadyMessage on new connection (2263034202880) from 127.0.0.1:9042
+2021-06-01 20:34:37,813 DEBUG [control connection] Established new connection <AsyncoreConnection(2263034202880) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:34:37,877 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:34:37,878 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:34:37,880 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:34:37,880 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:34:37,930 DEBUG Control connection created
+2021-06-01 20:34:37,934 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:34:39,035 DEBUG Sending options message heartbeat on idle connection (2263033508584) 127.0.0.1:9042
+2021-06-01 20:34:39,053 DEBUG Received options response on connection (2263033508584) from 127.0.0.1:9042
+2021-06-01 20:34:39,144 DEBUG Sending initial options message for new connection (2263034191544) to 127.0.0.1:9042
+2021-06-01 20:34:39,163 DEBUG Received options response on new connection (2263034191544) from 127.0.0.1:9042
+2021-06-01 20:34:39,164 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:34:39,165 DEBUG Sending StartupMessage on <AsyncoreConnection(2263034191544) 127.0.0.1:9042>
+2021-06-01 20:34:39,166 DEBUG Sent StartupMessage on <AsyncoreConnection(2263034191544) 127.0.0.1:9042>
+2021-06-01 20:34:39,171 DEBUG Got ReadyMessage on new connection (2263034191544) from 127.0.0.1:9042
+2021-06-01 20:34:39,173 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:34:39,173 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:34:39,175 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:34:39,177 DEBUG Started Session with client_id 17b8d02f-6ab5-4cf0-8f8c-585374bed950 and session_id 70be5866-e9d2-473e-916b-42065d7c6280
+2021-06-01 20:34:39,178 INFO in save_single_record()
+2021-06-01 20:34:39,179 INFO in get_db()
+2021-06-01 20:34:39,386 INFO out save_single_record()
+2021-06-01 20:34:39,399 INFO in save_single_record()
+2021-06-01 20:34:39,400 INFO in get_db()
+2021-06-01 20:34:39,680 INFO out save_single_record()
+2021-06-01 20:34:39,695 INFO in save_single_record()
+2021-06-01 20:34:39,696 INFO in get_db()
+2021-06-01 20:34:39,732 INFO out save_single_record()
+2021-06-01 20:34:39,741 INFO in save_single_record()
+2021-06-01 20:34:39,742 INFO in get_db()
+2021-06-01 20:34:39,779 INFO out save_single_record()
+2021-06-01 20:34:39,787 INFO in save_single_record()
+2021-06-01 20:34:39,787 INFO in get_db()
+2021-06-01 20:34:39,825 INFO out save_single_record()
+2021-06-01 20:34:39,835 INFO in save_single_record()
+2021-06-01 20:34:39,835 INFO in get_db()
+2021-06-01 20:34:39,883 INFO out save_single_record()
+2021-06-01 20:34:39,896 INFO in save_single_record()
+2021-06-01 20:34:39,896 INFO in get_db()
+2021-06-01 20:34:39,935 INFO out save_single_record()
+2021-06-01 20:34:39,958 INFO in save_single_record()
+2021-06-01 20:34:39,959 INFO in get_db()
+2021-06-01 20:34:39,997 INFO out save_single_record()
+2021-06-01 20:34:40,003 INFO in save_single_record()
+2021-06-01 20:34:40,003 INFO in get_db()
+2021-06-01 20:34:40,040 INFO out save_single_record()
+2021-06-01 20:34:40,051 INFO in save_single_record()
+2021-06-01 20:34:40,052 INFO in get_db()
+2021-06-01 20:34:40,110 INFO out save_single_record()
+2021-06-01 20:34:40,127 INFO in save_single_record()
+2021-06-01 20:34:40,128 INFO in get_db()
+2021-06-01 20:34:40,205 INFO out save_single_record()
+2021-06-01 20:34:40,207 INFO in save_single_record()
+2021-06-01 20:34:40,208 INFO in get_db()
+2021-06-01 20:34:40,227 INFO out save_single_record()
+2021-06-01 20:34:40,238 INFO 127.0.0.1 - - [01/Jun/2021 20:34:40] "POST /form/upload-records HTTP/1.1" 200 -
+2021-06-01 20:34:40,418 INFO 127.0.0.1 - - [01/Jun/2021 20:34:40] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:34:40,441 INFO 127.0.0.1 - - [01/Jun/2021 20:34:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:34:55,438 INFO 127.0.0.1 - - [01/Jun/2021 20:34:55] "POST / HTTP/1.1" 200 -
+2021-06-01 20:34:55,517 INFO 127.0.0.1 - - [01/Jun/2021 20:34:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:35:09,043 DEBUG Sending options message heartbeat on idle connection (2263033508584) 127.0.0.1:9042
+2021-06-01 20:35:09,059 DEBUG Received options response on connection (2263033508584) from 127.0.0.1:9042
+2021-06-01 20:35:18,792 DEBUG connecting to MongoDB Started
+2021-06-01 20:35:18,998 DEBUG connecting to MongoDB Finished
+2021-06-01 20:35:19,000 DEBUG connecting to MongoDB Started
+2021-06-01 20:35:19,003 DEBUG Closing connection (2263034191544) to 127.0.0.1:9042
+2021-06-01 20:35:19,004 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:35:19,177 DEBUG connecting to MongoDB Finished
+2021-06-01 20:35:19,180 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:35:19,182 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:35:19,183 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:35:19,359 DEBUG Sending initial options message for new connection (2263033568672) to 127.0.0.1:9042
+2021-06-01 20:35:19,376 DEBUG Defuncting connection (2263033568672) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:35:19,376 DEBUG Closing connection (2263033568672) to 127.0.0.1:9042
+2021-06-01 20:35:19,377 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:35:19,378 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:35:20,889 DEBUG Sending initial options message for new connection (2263033567776) to 127.0.0.1:9042
+2021-06-01 20:35:20,907 DEBUG Defuncting connection (2263033567776) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:35:20,907 DEBUG Closing connection (2263033567776) to 127.0.0.1:9042
+2021-06-01 20:35:20,908 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:35:20,909 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:35:22,420 DEBUG Sending initial options message for new connection (2263033568672) to 127.0.0.1:9042
+2021-06-01 20:35:22,435 ERROR Closing connection <AsyncoreConnection(2263033568672) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:35:22,437 DEBUG Defuncting connection (2263033568672) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:35:22,438 DEBUG Closing connection (2263033568672) to 127.0.0.1:9042
+2021-06-01 20:35:22,439 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:35:22,440 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:35:23,950 DEBUG Sending initial options message for new connection (2263033568952) to 127.0.0.1:9042
+2021-06-01 20:35:23,966 DEBUG Received options response on new connection (2263033568952) from 127.0.0.1:9042
+2021-06-01 20:35:23,968 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:35:23,971 DEBUG Sending StartupMessage on <AsyncoreConnection(2263033568952) 127.0.0.1:9042>
+2021-06-01 20:35:23,973 DEBUG Sent StartupMessage on <AsyncoreConnection(2263033568952) 127.0.0.1:9042>
+2021-06-01 20:35:23,978 DEBUG Got ReadyMessage on new connection (2263033568952) from 127.0.0.1:9042
+2021-06-01 20:35:23,980 DEBUG [control connection] Established new connection <AsyncoreConnection(2263033568952) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:35:24,049 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:35:24,054 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:35:24,056 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:35:24,058 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:35:24,128 DEBUG Control connection created
+2021-06-01 20:35:24,132 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:35:25,385 DEBUG Sending initial options message for new connection (2263033449664) to 127.0.0.1:9042
+2021-06-01 20:35:25,401 DEBUG Received options response on new connection (2263033449664) from 127.0.0.1:9042
+2021-06-01 20:35:25,402 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:35:25,404 DEBUG Sending StartupMessage on <AsyncoreConnection(2263033449664) 127.0.0.1:9042>
+2021-06-01 20:35:25,405 DEBUG Sent StartupMessage on <AsyncoreConnection(2263033449664) 127.0.0.1:9042>
+2021-06-01 20:35:25,410 DEBUG Got ReadyMessage on new connection (2263033449664) from 127.0.0.1:9042
+2021-06-01 20:35:25,412 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:35:25,413 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:35:25,416 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:35:25,417 DEBUG Started Session with client_id 48cfe4dd-91c4-41a1-a92e-0fec4599d9ec and session_id 428de349-ba4a-4aca-b74c-ef977a7acde8
+2021-06-01 20:35:25,423 DEBUG connecting to MongoDB Started
+2021-06-01 20:35:25,620 DEBUG connecting to MongoDB Finished
+2021-06-01 20:35:25,621 INFO in save_single_record()
+2021-06-01 20:35:25,622 INFO in get_db()
+2021-06-01 20:35:25,791 INFO out save_single_record()
+2021-06-01 20:35:25,824 INFO in save_single_record()
+2021-06-01 20:35:25,826 INFO in get_db()
+2021-06-01 20:35:26,371 INFO out save_single_record()
+2021-06-01 20:35:26,373 INFO in save_single_record()
+2021-06-01 20:35:26,373 INFO in get_db()
+2021-06-01 20:35:26,391 INFO out save_single_record()
+2021-06-01 20:35:26,391 INFO in save_single_record()
+2021-06-01 20:35:26,392 INFO in get_db()
+2021-06-01 20:35:26,759 INFO out save_single_record()
+2021-06-01 20:35:26,762 INFO in save_single_record()
+2021-06-01 20:35:26,763 INFO in get_db()
+2021-06-01 20:35:26,812 INFO out save_single_record()
+2021-06-01 20:35:26,819 INFO 127.0.0.1 - - [01/Jun/2021 20:35:26] "POST /form/download-records HTTP/1.1" 200 -
+2021-06-01 20:35:26,948 INFO 127.0.0.1 - - [01/Jun/2021 20:35:26] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:35:26,958 INFO 127.0.0.1 - - [01/Jun/2021 20:35:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:35:37,946 DEBUG Sending options message heartbeat on idle connection (2263034202880) 127.0.0.1:9042
+2021-06-01 20:35:37,963 DEBUG Received options response on connection (2263034202880) from 127.0.0.1:9042
+2021-06-01 20:35:39,055 DEBUG Sending options message heartbeat on idle connection (2263033508584) 127.0.0.1:9042
+2021-06-01 20:35:39,074 DEBUG Received options response on connection (2263033508584) from 127.0.0.1:9042
+2021-06-01 20:35:57,476 INFO 127.0.0.1 - - [01/Jun/2021 20:35:57] "POST / HTTP/1.1" 200 -
+2021-06-01 20:35:57,545 INFO 127.0.0.1 - - [01/Jun/2021 20:35:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:36:07,280 INFO 127.0.0.1 - - [01/Jun/2021 20:36:07] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:36:07,957 DEBUG Sending options message heartbeat on idle connection (2263034202880) 127.0.0.1:9042
+2021-06-01 20:36:07,976 DEBUG Received options response on connection (2263034202880) from 127.0.0.1:9042
+2021-06-01 20:36:09,067 DEBUG Sending options message heartbeat on idle connection (2263033508584) 127.0.0.1:9042
+2021-06-01 20:36:09,084 DEBUG Received options response on connection (2263033508584) from 127.0.0.1:9042
+2021-06-01 20:36:24,151 DEBUG Sending options message heartbeat on idle connection (2263033449664) 127.0.0.1:9042
+2021-06-01 20:36:24,151 DEBUG Sending options message heartbeat on idle connection (2263033568952) 127.0.0.1:9042
+2021-06-01 20:36:24,167 DEBUG Received options response on connection (2263033568952) from 127.0.0.1:9042
+2021-06-01 20:36:24,168 DEBUG Received options response on connection (2263033449664) from 127.0.0.1:9042
+2021-06-01 20:36:37,965 DEBUG Sending options message heartbeat on idle connection (2263034202880) 127.0.0.1:9042
+2021-06-01 20:36:37,982 DEBUG Received options response on connection (2263034202880) from 127.0.0.1:9042
+2021-06-01 20:36:39,075 DEBUG Sending options message heartbeat on idle connection (2263033508584) 127.0.0.1:9042
+2021-06-01 20:36:39,093 DEBUG Received options response on connection (2263033508584) from 127.0.0.1:9042
+2021-06-01 20:36:46,731 DEBUG connecting to MongoDB Started
+2021-06-01 20:36:47,337 DEBUG connecting to MongoDB Finished
+2021-06-01 20:36:47,339 DEBUG connecting to MongoDB Started
+2021-06-01 20:36:47,487 DEBUG connecting to MongoDB Finished
+2021-06-01 20:36:47,543 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:36:47,543 DEBUG Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2021-06-01 20:36:47,545 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:36:47,548 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:36:47,566 DEBUG Starting asyncore event loop
+2021-06-01 20:36:47,581 DEBUG Sending initial options message for new connection (1987619160360) to 127.0.0.1:9042
+2021-06-01 20:36:47,601 DEBUG Defuncting connection (1987619160360) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:36:47,601 DEBUG Closing connection (1987619160360) to 127.0.0.1:9042
+2021-06-01 20:36:47,602 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:36:47,604 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:36:49,103 DEBUG Sending initial options message for new connection (1987619161256) to 127.0.0.1:9042
+2021-06-01 20:36:49,121 DEBUG Defuncting connection (1987619161256) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:36:49,121 DEBUG Closing connection (1987619161256) to 127.0.0.1:9042
+2021-06-01 20:36:49,122 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:36:49,124 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:36:50,633 DEBUG Sending initial options message for new connection (1987619161984) to 127.0.0.1:9042
+2021-06-01 20:36:50,649 ERROR Closing connection <AsyncoreConnection(1987619161984) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:36:50,651 DEBUG Defuncting connection (1987619161984) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:36:50,652 DEBUG Closing connection (1987619161984) to 127.0.0.1:9042
+2021-06-01 20:36:50,652 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:36:50,653 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:36:52,162 DEBUG Sending initial options message for new connection (1987619160360) to 127.0.0.1:9042
+2021-06-01 20:36:52,179 DEBUG Received options response on new connection (1987619160360) from 127.0.0.1:9042
+2021-06-01 20:36:52,180 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:36:52,180 DEBUG Sending StartupMessage on <AsyncoreConnection(1987619160360) 127.0.0.1:9042>
+2021-06-01 20:36:52,189 DEBUG Sent StartupMessage on <AsyncoreConnection(1987619160360) 127.0.0.1:9042>
+2021-06-01 20:36:52,195 DEBUG Got ReadyMessage on new connection (1987619160360) from 127.0.0.1:9042
+2021-06-01 20:36:52,197 DEBUG [control connection] Established new connection <AsyncoreConnection(1987619160360) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:36:52,243 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:36:52,244 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:36:52,245 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:36:52,245 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:36:52,297 DEBUG Control connection created
+2021-06-01 20:36:52,303 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:36:53,548 DEBUG Sending initial options message for new connection (1987619160472) to 127.0.0.1:9042
+2021-06-01 20:36:53,566 DEBUG Received options response on new connection (1987619160472) from 127.0.0.1:9042
+2021-06-01 20:36:53,567 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:36:53,569 DEBUG Sending StartupMessage on <AsyncoreConnection(1987619160472) 127.0.0.1:9042>
+2021-06-01 20:36:53,570 DEBUG Sent StartupMessage on <AsyncoreConnection(1987619160472) 127.0.0.1:9042>
+2021-06-01 20:36:53,576 DEBUG Got ReadyMessage on new connection (1987619160472) from 127.0.0.1:9042
+2021-06-01 20:36:53,580 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:36:53,582 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:36:53,585 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:36:53,586 DEBUG Started Session with client_id cd400a0f-475b-449d-8ef5-9ceb040c4d23 and session_id 7ec27db3-f252-47fb-854b-91c3f2e56f39
+2021-06-01 20:36:53,593 DEBUG connecting to MongoDB Started
+2021-06-01 20:36:53,904 DEBUG connecting to MongoDB Finished
+2021-06-01 20:36:53,905 INFO in save_single_record()
+2021-06-01 20:36:53,906 INFO in get_db()
+2021-06-01 20:36:54,309 INFO out save_single_record()
+2021-06-01 20:36:54,334 INFO in save_single_record()
+2021-06-01 20:36:54,334 INFO in get_db()
+2021-06-01 20:36:54,695 INFO out save_single_record()
+2021-06-01 20:36:54,696 INFO in save_single_record()
+2021-06-01 20:36:54,696 INFO in get_db()
+2021-06-01 20:36:54,750 INFO out save_single_record()
+2021-06-01 20:36:54,750 INFO in save_single_record()
+2021-06-01 20:36:54,751 INFO in get_db()
+2021-06-01 20:36:54,926 INFO out save_single_record()
+2021-06-01 20:36:54,929 INFO in save_single_record()
+2021-06-01 20:36:54,929 INFO in get_db()
+2021-06-01 20:36:54,951 INFO out save_single_record()
+2021-06-01 20:36:54,992 INFO 127.0.0.1 - - [01/Jun/2021 20:36:54] "POST /form/download-records HTTP/1.1" 200 -
+2021-06-01 20:36:55,062 INFO 127.0.0.1 - - [01/Jun/2021 20:36:55] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:36:55,079 INFO 127.0.0.1 - - [01/Jun/2021 20:36:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:37:35,969 DEBUG connecting to MongoDB Started
+2021-06-01 20:37:36,581 DEBUG connecting to MongoDB Finished
+2021-06-01 20:37:36,583 DEBUG connecting to MongoDB Started
+2021-06-01 20:37:36,734 DEBUG connecting to MongoDB Finished
+2021-06-01 20:37:36,740 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:37:36,741 DEBUG Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2021-06-01 20:37:36,746 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:37:36,751 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:37:36,759 DEBUG Starting asyncore event loop
+2021-06-01 20:37:36,769 DEBUG Sending initial options message for new connection (2278393955328) to 127.0.0.1:9042
+2021-06-01 20:37:36,786 DEBUG Defuncting connection (2278393955328) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:37:36,787 DEBUG Closing connection (2278393955328) to 127.0.0.1:9042
+2021-06-01 20:37:36,787 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:37:36,788 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:37:38,297 DEBUG Sending initial options message for new connection (2278394122312) to 127.0.0.1:9042
+2021-06-01 20:37:38,312 DEBUG Defuncting connection (2278394122312) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:37:38,315 DEBUG Closing connection (2278394122312) to 127.0.0.1:9042
+2021-06-01 20:37:38,316 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:37:38,318 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:37:39,819 DEBUG Sending initial options message for new connection (2278394123152) to 127.0.0.1:9042
+2021-06-01 20:37:39,836 ERROR Closing connection <AsyncoreConnection(2278394123152) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:37:39,837 DEBUG Defuncting connection (2278394123152) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:37:39,838 DEBUG Closing connection (2278394123152) to 127.0.0.1:9042
+2021-06-01 20:37:39,838 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:37:39,840 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:37:41,347 DEBUG Sending initial options message for new connection (2278394122760) to 127.0.0.1:9042
+2021-06-01 20:37:41,363 DEBUG Received options response on new connection (2278394122760) from 127.0.0.1:9042
+2021-06-01 20:37:41,366 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:37:41,367 DEBUG Sending StartupMessage on <AsyncoreConnection(2278394122760) 127.0.0.1:9042>
+2021-06-01 20:37:41,373 DEBUG Sent StartupMessage on <AsyncoreConnection(2278394122760) 127.0.0.1:9042>
+2021-06-01 20:37:41,379 DEBUG Got ReadyMessage on new connection (2278394122760) from 127.0.0.1:9042
+2021-06-01 20:37:41,380 DEBUG [control connection] Established new connection <AsyncoreConnection(2278394122760) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:37:41,428 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:37:41,431 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:37:41,433 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:37:41,434 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:37:41,489 DEBUG Control connection created
+2021-06-01 20:37:41,496 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:37:42,733 DEBUG Sending initial options message for new connection (2278393956000) to 127.0.0.1:9042
+2021-06-01 20:37:42,749 DEBUG Received options response on new connection (2278393956000) from 127.0.0.1:9042
+2021-06-01 20:37:42,750 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:37:42,751 DEBUG Sending StartupMessage on <AsyncoreConnection(2278393956000) 127.0.0.1:9042>
+2021-06-01 20:37:42,751 DEBUG Sent StartupMessage on <AsyncoreConnection(2278393956000) 127.0.0.1:9042>
+2021-06-01 20:37:42,755 DEBUG Got ReadyMessage on new connection (2278393956000) from 127.0.0.1:9042
+2021-06-01 20:37:42,757 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:37:42,758 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:37:42,760 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:37:42,762 DEBUG Started Session with client_id ab284060-6254-45a5-a9b9-8e1e4501cd9c and session_id 5a9d267a-53ab-4fad-bf7f-989328308b55
+2021-06-01 20:37:42,765 DEBUG connecting to MongoDB Started
+2021-06-01 20:37:42,941 DEBUG connecting to MongoDB Finished
+2021-06-01 20:37:42,942 INFO in save_single_record()
+2021-06-01 20:37:42,944 INFO in get_db()
+2021-06-01 20:37:43,243 INFO out save_single_record()
+2021-06-01 20:37:43,262 INFO in save_single_record()
+2021-06-01 20:37:43,263 INFO in get_db()
+2021-06-01 20:37:43,544 INFO out save_single_record()
+2021-06-01 20:37:43,546 INFO in save_single_record()
+2021-06-01 20:37:43,548 INFO in get_db()
+2021-06-01 20:37:43,590 INFO out save_single_record()
+2021-06-01 20:37:43,591 INFO in save_single_record()
+2021-06-01 20:37:43,591 INFO in get_db()
+2021-06-01 20:37:44,030 INFO out save_single_record()
+2021-06-01 20:37:44,034 INFO in save_single_record()
+2021-06-01 20:37:44,035 INFO in get_db()
+2021-06-01 20:37:44,093 INFO out save_single_record()
+2021-06-01 20:37:44,177 INFO 127.0.0.1 - - [01/Jun/2021 20:37:44] "POST /form/download-records HTTP/1.1" 200 -
+2021-06-01 20:37:44,303 INFO 127.0.0.1 - - [01/Jun/2021 20:37:44] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:37:44,313 INFO 127.0.0.1 - - [01/Jun/2021 20:37:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:37:49,036 DEBUG connecting to MongoDB Started
+2021-06-01 20:37:49,194 DEBUG connecting to MongoDB Finished
+2021-06-01 20:37:49,197 DEBUG connecting to MongoDB Started
+2021-06-01 20:37:49,365 DEBUG connecting to MongoDB Finished
+2021-06-01 20:37:49,426 DEBUG Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 66
+2021-06-01 20:37:49,427 DEBUG Host 127.0.0.1:9042 is now marked up
+2021-06-01 20:37:49,431 DEBUG [control connection] Opening new connection to 127.0.0.1:9042
+2021-06-01 20:37:50,465 DEBUG Sending initial options message for new connection (2278393956728) to 127.0.0.1:9042
+2021-06-01 20:37:50,484 DEBUG Defuncting connection (2278393956728) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:37:50,487 DEBUG Closing connection (2278393956728) to 127.0.0.1:9042
+2021-06-01 20:37:50,489 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:37:50,491 WARNING Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:37:52,003 DEBUG Sending initial options message for new connection (2278394594640) to 127.0.0.1:9042
+2021-06-01 20:37:52,023 DEBUG Defuncting connection (2278394594640) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2021-06-01 20:37:52,024 DEBUG Closing connection (2278394594640) to 127.0.0.1:9042
+2021-06-01 20:37:52,025 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:37:52,026 WARNING Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:37:53,527 DEBUG Sending initial options message for new connection (2278393956728) to 127.0.0.1:9042
+2021-06-01 20:37:53,544 ERROR Closing connection <AsyncoreConnection(2278393956728) 127.0.0.1:9042> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-06-01 20:37:53,545 DEBUG Defuncting connection (2278393956728) to 127.0.0.1:9042: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2021-06-01 20:37:53,546 DEBUG Closing connection (2278393956728) to 127.0.0.1:9042
+2021-06-01 20:37:53,547 DEBUG Closed socket to 127.0.0.1:9042
+2021-06-01 20:37:53,548 WARNING Downgrading core protocol version from 5 to 4 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-06-01 20:37:55,056 DEBUG Sending initial options message for new connection (2278393910104) to 127.0.0.1:9042
+2021-06-01 20:37:55,072 DEBUG Received options response on new connection (2278393910104) from 127.0.0.1:9042
+2021-06-01 20:37:55,073 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:37:55,074 DEBUG Sending StartupMessage on <AsyncoreConnection(2278393910104) 127.0.0.1:9042>
+2021-06-01 20:37:55,074 DEBUG Sent StartupMessage on <AsyncoreConnection(2278393910104) 127.0.0.1:9042>
+2021-06-01 20:37:55,079 DEBUG Got ReadyMessage on new connection (2278393910104) from 127.0.0.1:9042
+2021-06-01 20:37:55,081 DEBUG [control connection] Established new connection <AsyncoreConnection(2278393910104) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2021-06-01 20:37:55,124 DEBUG [control connection] Refreshing node list and token map using preloaded results
+2021-06-01 20:37:55,131 INFO Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-06-01 20:37:55,135 DEBUG [control connection] Finished fetching ring info
+2021-06-01 20:37:55,136 DEBUG [control connection] Rebuilding token map due to topology changes
+2021-06-01 20:37:55,218 DEBUG Control connection created
+2021-06-01 20:37:55,222 DEBUG Initializing connection for host 127.0.0.1:9042
+2021-06-01 20:37:56,464 DEBUG Sending initial options message for new connection (2278394602552) to 127.0.0.1:9042
+2021-06-01 20:37:56,480 DEBUG Received options response on new connection (2278394602552) from 127.0.0.1:9042
+2021-06-01 20:37:56,481 DEBUG No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2021-06-01 20:37:56,482 DEBUG Sending StartupMessage on <AsyncoreConnection(2278394602552) 127.0.0.1:9042>
+2021-06-01 20:37:56,483 DEBUG Sent StartupMessage on <AsyncoreConnection(2278394602552) 127.0.0.1:9042>
+2021-06-01 20:37:56,486 DEBUG Got ReadyMessage on new connection (2278394602552) from 127.0.0.1:9042
+2021-06-01 20:37:56,487 DEBUG Finished initializing connection for host 127.0.0.1:9042
+2021-06-01 20:37:56,488 DEBUG Added pool for host 127.0.0.1:9042 to session
+2021-06-01 20:37:56,490 DEBUG Not starting MonitorReporter thread for Insights; not supported by server version 3.11.10 on ControlConnection host 127.0.0.1:9042
+2021-06-01 20:37:56,492 DEBUG Started Session with client_id 945a4da6-3830-47ba-adb6-3f8fd18811c9 and session_id 3c3caf60-0b3d-4b29-8cc8-31eeb4132513
+2021-06-01 20:37:56,497 DEBUG connecting to MongoDB Started
+2021-06-01 20:37:56,751 DEBUG connecting to MongoDB Finished
+2021-06-01 20:37:56,751 INFO in save_single_record()
+2021-06-01 20:37:56,752 INFO in get_db()
+2021-06-01 20:37:57,171 INFO out save_single_record()
+2021-06-01 20:37:57,185 INFO in save_single_record()
+2021-06-01 20:37:57,186 INFO in get_db()
+2021-06-01 20:37:57,562 INFO out save_single_record()
+2021-06-01 20:37:57,563 INFO in save_single_record()
+2021-06-01 20:37:57,564 INFO in get_db()
+2021-06-01 20:37:57,619 INFO out save_single_record()
+2021-06-01 20:37:57,620 INFO in save_single_record()
+2021-06-01 20:37:57,621 INFO in get_db()
+2021-06-01 20:37:58,103 INFO out save_single_record()
+2021-06-01 20:37:58,105 INFO in save_single_record()
+2021-06-01 20:37:58,106 INFO in get_db()
+2021-06-01 20:37:58,165 INFO out save_single_record()
+2021-06-01 20:37:58,173 INFO 127.0.0.1 - - [01/Jun/2021 20:37:58] "POST /form/download-records HTTP/1.1" 200 -
+2021-06-01 20:37:58,300 INFO 127.0.0.1 - - [01/Jun/2021 20:37:58] "[33mGET /form/style.css HTTP/1.1[0m" 404 -
+2021-06-01 20:37:58,316 INFO 127.0.0.1 - - [01/Jun/2021 20:37:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2021-06-01 20:38:02,410 INFO 127.0.0.1 - - [01/Jun/2021 20:38:02] "POST / HTTP/1.1" 200 -
+2021-06-01 20:38:02,481 INFO 127.0.0.1 - - [01/Jun/2021 20:38:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

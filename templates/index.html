@@ -6,7 +6,6 @@
     .center {
       margin: auto;
       width: 50%;
-      border: 1px solid #73AD21;
       padding: 10px;
     }
     html, body {
@@ -110,6 +109,8 @@ $(document).ready(function(){
         $("#new_data_div").hide();
         $("#file_path_div").hide();
         $("#filter_div").hide();
+        $("#record_nums_div").hide();
+
 
   $("#operation").change(function(){
     var operation = $("#operation").val();
@@ -121,35 +122,57 @@ $(document).ready(function(){
         $("#new_data_div").hide();
         $("#file_path_div").hide();
         $("#filter_div").hide();
+        $("#record_nums_div").hide();
     }else if(operation == 'create-table'){
         $("#table_name_div").show();
         $("#columns_div").show();
         $("#db_name_div").show();
+        $("#db_name_div").show();
+        $("#record_nums_div").hide();
+        $("#data_div").hide();
+        $("#file_path_div").hide();
+        $("#filter_div").hide();
     }else if(operation == 'insert'){
         $("#data_div").show();
         $("#table_name_div").show();
         $("#columns_div").hide();
+        $("#db_name_div").show();
+        $("#record_nums_div").hide();
+        $("#file_path_div").hide();
+        $("#filter_div").hide();
+        $("#new_data_div").hide();
     }else if(operation == 'update'){
         $("#data_div").hide();
         $("#table_name_div").show();
         $("#new_data_div").show();
         $("#filter_div").show();
+        $("#db_name_div").show();
+        $("#record_nums_div").hide();
+        $("#file_path_div").hide();
     }else if(operation == 'delete'){
          $("#filter_div").show();
          $("#data_div").hide();
+         $("#table_name_div").show();
          $("#new_data_div").hide();
+         $("#db_name_div").show();
+         $("#record_nums_div").hide();
+         $("#file_path_div").hide();
     }else if(operation == 'bulk_upload'){
         $("#data_div").hide();
         $("#table_name_div").show();
         $("#new_data_div").hide();
         $("#filter_div").hide();
         $("#file_path_div").show();
+        $("#db_name_div").show();
+        $("#record_nums_div").hide();
     }else if(operation == 'bulk_download'){
         $("#data_div").hide();
         $("#table_name_div").show();
         $("#new_data_div").hide();
         $("#filter_div").hide();
         $("#file_path_div").hide();
+        $("#db_name_div").show();
+        $("#record_nums_div").show();
     }
 
   });
@@ -162,15 +185,15 @@ $(document).ready(function(){
     }else if(operation == 'create-table'){
         $('#record_form').attr('action','/form/create-table');
     }else if(operation == 'insert'){
-        $('#record_form').attr('action','create-db');
+        $('#record_form').attr('action','/form/save-record');
     }else if(operation == 'update'){
-        $('#record_form').attr('action','create-db');
+        $('#record_form').attr('action','/form/update-record');
     }else if(operation == 'delete'){
-        $('#record_form').attr('action','create-db');
+        $('#record_form').attr('action','/form/delete-record');
     }else if(operation == 'bulk_upload'){
-        $('#record_form').attr('action','create-db');
+        $('#record_form').attr('action','/form/upload-records');
     }else if(operation == 'bulk_download'){
-        $('#record_form').attr('action','create-db');
+        $('#record_form').attr('action','/form/download-records');
     }
     $('#record_form').submit();
   });
@@ -183,7 +206,7 @@ $(document).ready(function(){
     <h1 style="text-align: center;margin-top: 2%;">Record Management</h1>
     <div class="center">
         <form id="record_form" name="record_form" action="" method="POST" class="center">
-            <div style="padding: 10px;">
+            <div>
                 <label for="db_type">DB Type:</label>
                 <select id="db_type" name="db_type">
                     <option value="MYSQL">MySql</option>
@@ -191,7 +214,7 @@ $(document).ready(function(){
                     <option value="MONGODB">MongoDb</option>
                 </select>
             </div>
-             <div style="padding: 10px;">
+             <div>
                 <label for="operation">Operation:</label>
                 <select id="operation" name="operation">
                     <option value="-1">Select</option>
@@ -204,45 +227,49 @@ $(document).ready(function(){
                     <option value="bulk_download">Bulk Download</option>
                 </select>
             </div>
-            <div style="padding: 10px;">
+            <div>
                 <label for="host">Host:</label>
                 <input type="text" name="host" id="host">
             </div>
-            <div style="padding: 10px;">
+            <div>
                 <label for="user_name">User Name:</label>
                 <input type="text" name="user_name" id="user_name">
             </div>
-            <div style="padding: 10px;">
+            <div>
                 <label for="password">Password:</label>
                 <input name="password" id="password" type="password">
             </div>
-            <div id="db_name_div" style="padding: 10px;">
+            <div id="db_name_div">
                 <label for="db_name">Db Name:</label>
                 <input type="text" name="db_name" id="db_name">
             </div>
-            <div id="table_name_div" style="padding: 10px;">
+            <div id="table_name_div">
                 <label for="table_name">Table Name:</label>
                 <input type="text" name="table_name" id="table_name">
             </div>
-            <div id="columns_div" style="padding: 10px;">
+            <div id="columns_div">
                 <label for="columns">Columns:</label>
                 <textarea name="columns" id="columns"></textarea>
             </div>
-            <div id="data_div" style="padding: 10px;">
-                <label for="data">Data:</label>
-                <textarea name="data" id="data"></textarea>
+            <div id="data_div">
+                <label for="dct_obj">Data:</label>
+                <textarea name="dct_obj" id="dct_obj"></textarea>
             </div>
-            <div id="filter_div" style="padding: 10px;">
+            <div id="filter_div">
                 <label for="filter_criteria">Filter Criteria:</label>
                 <input type="text" name="filter_criteria" id="filter_criteria">
             </div>
-            <div id="new_data_div" style="padding: 10px;">
-                <label for="new_data">Data To Update:</label>
-                <textarea name="new_data" id="new_data"></textarea>
+            <div id="new_data_div">
+                <label for="new_value">Data To Update:</label>
+                <textarea name="new_value" id="new_value"></textarea>
             </div>
-            <div id="file_path_div" style="padding: 10px;">
-                <label for="file_path">File Path:</label>
-                <input type="text" name="file_path" id="file_path"/>
+            <div id="file_path_div">
+                <label for="file_name">File Path:</label>
+                <input type="text" name="file_name" id="file_name"/>
+            </div>
+            <div id="record_nums_div">
+                <label for="num_records">Number Of Records:</label>
+                <input type="text" name="num_records" id="num_records"/>
             </div>
             <div class="center">
                 <input id='submit_btn' type="button" value="Submit">
