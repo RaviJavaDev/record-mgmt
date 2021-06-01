@@ -1,0 +1,254 @@
+<title>Record Management</title>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+    .center {
+      margin: auto;
+      width: 50%;
+      border: 1px solid #73AD21;
+      padding: 10px;
+    }
+    html, body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      }
+      h1 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #1c87c9;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #1c87c9;
+      }
+      form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5;
+      background: #f5f5f5;
+      }
+      .fas {
+      margin: 25px 10px 0;
+      font-size: 72px;
+      color: #fff;
+      }
+      .fa-envelope {
+      transform: rotate(-20deg);
+      }
+      .fa-at , .fa-mail-bulk{
+      transform: rotate(10deg);
+      }
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      select{
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #2371a0;
+      }
+      @media (min-width: 568px) {
+      .main-block {
+      flex-direction: row;
+      }
+      .left-part, form {
+      width: 50%;
+      }
+      .fa-envelope {
+      margin-top: 0;
+      margin-left: 20%;
+      }
+      .fa-at {
+      margin-top: -10%;
+      margin-left: 65%;
+      }
+      .fa-mail-bulk {
+      margin-top: 2%;
+      margin-left: 28%;
+      }
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+        $("#db_name_div").hide();
+        $("#table_name_div").hide();
+        $("#data_div").hide();
+        $("#columns_div").hide();
+        $("#new_data_div").hide();
+        $("#file_path_div").hide();
+        $("#filter_div").hide();
+
+  $("#operation").change(function(){
+    var operation = $("#operation").val();
+    if(operation == 'create-db'){
+        $("#db_name_div").show();
+        $("#table_name_div").hide();
+        $("#data_div").hide();
+        $("#columns_div").hide();
+        $("#new_data_div").hide();
+        $("#file_path_div").hide();
+        $("#filter_div").hide();
+    }else if(operation == 'create-table'){
+        $("#table_name_div").show();
+        $("#columns_div").show();
+        $("#db_name_div").show();
+    }else if(operation == 'insert'){
+        $("#data_div").show();
+        $("#table_name_div").show();
+        $("#columns_div").hide();
+    }else if(operation == 'update'){
+        $("#data_div").hide();
+        $("#table_name_div").show();
+        $("#new_data_div").show();
+        $("#filter_div").show();
+    }else if(operation == 'delete'){
+         $("#filter_div").show();
+         $("#data_div").hide();
+         $("#new_data_div").hide();
+    }else if(operation == 'bulk_upload'){
+        $("#data_div").hide();
+        $("#table_name_div").show();
+        $("#new_data_div").hide();
+        $("#filter_div").hide();
+        $("#file_path_div").show();
+    }else if(operation == 'bulk_download'){
+        $("#data_div").hide();
+        $("#table_name_div").show();
+        $("#new_data_div").hide();
+        $("#filter_div").hide();
+        $("#file_path_div").hide();
+    }
+
+  });
+
+  $("#submit_btn").click(function(){
+    var operation = $("#operation").val();
+
+    if(operation == 'create-db'){
+        $('#record_form').attr('action','/form/create-db');
+    }else if(operation == 'create-table'){
+        $('#record_form').attr('action','/form/create-table');
+    }else if(operation == 'insert'){
+        $('#record_form').attr('action','create-db');
+    }else if(operation == 'update'){
+        $('#record_form').attr('action','create-db');
+    }else if(operation == 'delete'){
+        $('#record_form').attr('action','create-db');
+    }else if(operation == 'bulk_upload'){
+        $('#record_form').attr('action','create-db');
+    }else if(operation == 'bulk_download'){
+        $('#record_form').attr('action','create-db');
+    }
+    $('#record_form').submit();
+  });
+});
+
+    </script>
+</head>
+<body>
+<div class="content">
+    <h1 style="text-align: center;margin-top: 2%;">Record Management</h1>
+    <div class="center">
+        <form id="record_form" name="record_form" action="" method="POST" class="center">
+            <div style="padding: 10px;">
+                <label for="db_type">DB Type:</label>
+                <select id="db_type" name="db_type">
+                    <option value="MYSQL">MySql</option>
+                    <option value="CASSANDRA">Cassandra</option>
+                    <option value="MONGODB">MongoDb</option>
+                </select>
+            </div>
+             <div style="padding: 10px;">
+                <label for="operation">Operation:</label>
+                <select id="operation" name="operation">
+                    <option value="-1">Select</option>
+                    <option value="create-db">Create Db</option>
+                    <option value="create-table">Create Table</option>
+                    <option value="insert">Insert Data</option>
+                    <option value="update">Update Data</option>
+                    <option value="delete">Delete Data</option>
+                    <option value="bulk_upload">Bulk Upload</option>
+                    <option value="bulk_download">Bulk Download</option>
+                </select>
+            </div>
+            <div style="padding: 10px;">
+                <label for="host">Host:</label>
+                <input type="text" name="host" id="host">
+            </div>
+            <div style="padding: 10px;">
+                <label for="user_name">User Name:</label>
+                <input type="text" name="user_name" id="user_name">
+            </div>
+            <div style="padding: 10px;">
+                <label for="password">Password:</label>
+                <input name="password" id="password" type="password">
+            </div>
+            <div id="db_name_div" style="padding: 10px;">
+                <label for="db_name">Db Name:</label>
+                <input type="text" name="db_name" id="db_name">
+            </div>
+            <div id="table_name_div" style="padding: 10px;">
+                <label for="table_name">Table Name:</label>
+                <input type="text" name="table_name" id="table_name">
+            </div>
+            <div id="columns_div" style="padding: 10px;">
+                <label for="columns">Columns:</label>
+                <textarea name="columns" id="columns"></textarea>
+            </div>
+            <div id="data_div" style="padding: 10px;">
+                <label for="data">Data:</label>
+                <textarea name="data" id="data"></textarea>
+            </div>
+            <div id="filter_div" style="padding: 10px;">
+                <label for="criteria">Filter Criteria:</label>
+                <input type="text" name="criteria" id="criteria"></textarea>
+            </div>
+            <div id="new_data_div" style="padding: 10px;">
+                <label for="new_data">Data To Update:</label>
+                <textarea name="new_data" id="new_data"></textarea>
+            </div>
+            <div id="file_path_div" style="padding: 10px;">
+                <label for="file_path">File Path:</label>
+                <input type="text" name="file_path" id="file_path"/>
+            </div>
+            <div class="center">
+                <input id='submit_btn' type="button" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

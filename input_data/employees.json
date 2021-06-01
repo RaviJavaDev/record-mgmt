@@ -1,0 +1,92 @@
+[
+  {
+    "emp_id": 1,
+    "emp_name": "Ravi Sonawane",
+    "age": 32,
+    "salary": 200000,
+    "email": "ravi@gmail.com",
+    "phone_no": "7709224868",
+    "dept": "IT"
+  },
+  {
+    "emp_id": 2,
+    "emp_name": "Nitin Pawar",
+    "age": 35,
+    "salary": 150000,
+    "email": "nitin@gmail.com",
+    "phone_no": "7709212485",
+    "dept": "HR"
+  },
+  {
+    "emp_id": 3,
+    "emp_name": "Yogesh",
+    "age": 30,
+    "salary": 100000,
+    "email": "yogesh@gmail.com",
+    "phone_no": "98509224868",
+    "dept": "Support"
+  },
+  {
+    "emp_id": 4,
+    "emp_name": "Kiran",
+    "age": 31,
+    "salary": 150000,
+    "email": "kiran@gmail.com",
+    "phone_no": "8399224868",
+    "dept": "IT"
+  },
+  {
+    "emp_id": 5,
+    "emp_name": "Ravi Lalvani",
+    "age": 32,
+    "salary": 100000,
+    "email": "ravi.lalvali@gmail.com",
+    "phone_no": "7239224868",
+    "dept": "IT"
+  },
+  {
+    "emp_id": 6,
+    "emp_name": "Pritesh",
+    "age": 30,
+    "salary": 300000,
+    "email": "pritesh@gmail.com",
+    "phone_no": "8326224868",
+    "dept": "IT"
+  },
+  {
+    "emp_id": 7,
+    "emp_name": "Ruchi",
+    "age": 28,
+    "salary": 150000,
+    "email": "ruchi@gmail.com",
+    "phone_no": "8389224868",
+    "dept": "HR"
+  },
+  {
+    "emp_id": 8,
+    "emp_name": "Sayali",
+    "age": 26,
+    "salary": 1500000,
+    "email": "sayali@gmail.com",
+    "phone_no": "8369224868",
+    "dept": "IT"
+  },
+  {
+    "emp_id": 9,
+    "emp_name": "Pragati",
+    "age": 28,
+    "salary": 1500000,
+    "email": "pragati@gmail.com",
+    "phone_no": "4259224868",
+    "dept": "HR"
+  },
+  {
+    "emp_id": 10,
+    "emp_name": "Vikas",
+    "age": 36,
+    "salary": 200000,
+    "email": "vikas@gmail.com",
+    "phone_no": "7809224868",
+    "dept": "IT"
+  }
+]
